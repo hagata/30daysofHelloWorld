@@ -1,4 +1,4 @@
-### `#30xHelloworld`
+### `#30xHelloworlds`
 # 30 days of hello, world's
 30 new things in 30 days to inspire a lasting curiosity & desire to experiment.
 
