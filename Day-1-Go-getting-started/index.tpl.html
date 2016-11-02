@@ -1,0 +1,49 @@
+<style>
+    * {
+        box-sizing: border-box;
+        font-family: sans-serif;
+    }
+	.command__input {
+		width: 100%;
+		line-height: 1.5;
+	}
+
+	.log {
+		background: #f8f8f8;
+		padding: .25rem;
+	}
+
+	.log .message__timestamp {
+		display: inline-block;
+		margin-right: 1rem;
+	}
+
+	.log .message__command {
+		display: inline-block;
+	}
+</style>
+
+<main>
+	<div>
+		<h1>Golang input to log.</h1>
+
+		<form action="/message" method="POST">
+			<input class="command__input" type="text" name="command" placeholder="Hello, Go!">
+		</form>
+	</div>
+
+	<section class="log">
+		<div class="message">
+			<span class="message__timestamp">{{.timestamp}}</span>
+			<p class="message__command">{{.command}}</p>
+		</div>
+	</section>
+</main>
+
+<script>
+    let input = document.querySelector('.command__input')
+    input.addEventListener('submit', e => {
+        e.preventDefault();
+        console.log('submitted')
+    })
+</script>
