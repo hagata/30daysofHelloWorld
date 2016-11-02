@@ -7,3 +7,5 @@ The "app" simply displays a template with an input form which `POST`'s to one of
 - have older entries persist in the DOM
 - Render small snippet-templates with an append child like function on submit
 - use a small database of someking to keep a log of past message across sessions.
+
+<img width="655" alt="appscreenshot" src="https://cloud.githubusercontent.com/assets/2608893/19917956/f3fbb4e4-a084-11e6-98ba-ea3d571788de.png">
