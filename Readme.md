@@ -6,10 +6,14 @@ I believe the best way to improve, become well rounded, form better opinions, an
 
 In 30 days, I'm challenging myself to experiment with different frameworks, language, libraries, patterns, API's and technology that are unfamiliar or new to me. The goal is simply to gain a better understanding of the tools of the web and tech landscape by getting hands on experience and having fun doing so.
 
+Contents:
+- [Day 1: Go lang](#day1)
+- [Day 2: Hapi.js](#day2)
+
 ___
 
-# Day 1: ready, set, GO lang.
-to get `go`-ing, I chose to start with Go because I figured, if things go well, I could use it throughout the next 30 days as a platform on hosts like Heroku or Google App Engine.
+# <a name="day1"></a> Day 1: ready, set, GO lang.
+To get `go`-ing, I chose to start with Go because I figured, if things go well, I could use it throughout the next 30 days as a platform on hosts like Heroku or Google App Engine.
 
 ## What I like after 1 day
 The syntax seemed quickly familiar with the added difference/bonus of Type Declarations. However, the type interpolation is pretty nice in Go.
@@ -28,7 +32,8 @@ Resources:
 - [Pluralsight Go fundamentals](https://app.pluralsight.com/library/courses/go-fundamentals)
 - [Pluralsight Gin Go](https://app.pluralsight.com/library/courses/gin-go-web-app-framework/table-of-contents)
 
-# Day 2: Hapi.js
+
+# <a name="day2"></a>Day 2: Hapi.js
 In the spirit of setting up a web server with Go, I'm continuing the exploration around web servers with Hapi.js. Up until now, when I've needed to spin up a web server, I've almost exclusively reached for Express. Coming from Express, Getting started with Hapi was quite simple.
 
 The setup and syntax are similar enough, and even without any familiarity with a web server platform, Hapi is quite straight forward and easy to use. I enjoy the speed and simplicity of Hapi and will likely use it in the future projects.
