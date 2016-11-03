@@ -7,25 +7,25 @@
         <link href="static/css/main.css" rel="stylesheet">
     </head>
     <body>
-    <h1>hapi term</h1>
+    <h1 class="title">hapi term</h1>
 
     <main class="stage">
         <section class="term">
             <ul class="term__messages">
                 {{#each messages}}
                 <li class="term__message">
-                    <span class="timestamp">{{this.time}}</span>
-                    {{this.command}}
+                    <span class="timestamp">{{this.time}}:</span>
+                   {{this.user}}: {{this.command}}
                 </li>
                 {{/each}}
             </ul>
 
             <form class="command" action="/" method="POST">
-                <input class="command__input" type="text" name="command" value="">
+                <label for="command" class="command__input-label">$:</label>
+                <input type="submit" hidden name="user" value="user">
+                <input class="command__input" type="text" name="command" value="" autofocus>
             </form>
-<pre>
-{{messages}}
-</pre>
+
         </section>
     </main>
     </body>

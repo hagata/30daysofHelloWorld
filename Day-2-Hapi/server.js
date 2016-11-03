@@ -50,14 +50,15 @@ server.route([{
 
 function commandHandler(request, reply) {
     let data = request.payload;
+    let time = new Date().toISOString().replace(/T/, ' ').replace(/\..+/, '')
+
     let message =  {
         command: data.command,
-        time: Date.now()
+        time: time,
+        user: data.user
     }
+
     history.push(message)
-    //capture form data
-    //set form data object
-    console.log('request', message)
     reply.view('index', {messages: history})
 }
 
