@@ -23,13 +23,23 @@ server.views({
     path: 'templates'
 })
 
-server.route({
+server.route([{
     path: '/',
     method: 'GET',
     handler: function(request, reply) {
         reply.view('index', {msg: "Hello, Hapi World"})
     }
-})
+},
+{
+    path: '/static/{path*}',
+    method: 'GET',
+    handler: {
+        directory: {
+            path: './public',
+            listing: false
+        }
+    }
+}])
 
 
 server.start(err => {
