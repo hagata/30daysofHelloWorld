@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="static/css/main.css" rel="stylesheet">
+    </head>
+    <body>
+    <h1 class="title">hapi term</h1>
+
+    <main class="stage">
+        <section class="term">
+            <ul class="term__messages">
+                {{#each messages}}
+                <li class="term__message">
+                    <span class="timestamp">{{this.time}}:</span>
+                   {{this.user}}: {{this.command}}
+                </li>
+                {{/each}}
+            </ul>
+
+            <form class="command" action="/" method="POST">
+                <label for="command" class="command__input-label">$:</label>
+                <input type="submit" hidden name="user" value="user">
+                <input class="command__input" type="text" name="command" value="" autofocus>
+            </form>
+
+        </section>
+    </main>
+    </body>
+</html>
