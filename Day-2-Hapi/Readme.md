@@ -1,7 +1,7 @@
 # Hapi.js experiment app
-A simple web server with one route, `"/"`, which accepts both `GET` and `POST` methods. 
+A simple web server with one route, `"/"`, which accepts both `GET` and `POST` methods.
 
-The mock "hapi term" app is a simple example that uses a form to `POST` to the root handler. The form passes it's data to a Handlebars template and `push`es entered "command" to the message log. 
+The mock "hapi term" app is a simple example that uses a form to `POST` to the root handler. The form passes it's data to a Handlebars template and `push`es entered "command" to the message log.
 
 There are no "real" command line functions.
 
