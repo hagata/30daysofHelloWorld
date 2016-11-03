@@ -9,7 +9,7 @@ In 30 days, I'm challenging myself to experiment with different frameworks, lang
 Contents:
 - [Day 1: Go lang](#day1)
 - [Day 2: Hapi.js](#day2)
--
+
 ___
 
 # <a name="day1"></a> Day 1: ready, set, GO lang.
