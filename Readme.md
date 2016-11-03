@@ -13,7 +13,7 @@ Contents:
 ___
 
 # <a name="day1"></a> Day 1: ready, set, GO lang.
-to get `go`-ing, I chose to start with Go because I figured, if things go well, I could use it throughout the next 30 days as a platform on hosts like Heroku or Google App Engine.
+To get `go`-ing, I chose to start with Go because I figured, if things go well, I could use it throughout the next 30 days as a platform on hosts like Heroku or Google App Engine.
 
 ## What I like after 1 day
 The syntax seemed quickly familiar with the added difference/bonus of Type Declarations. However, the type interpolation is pretty nice in Go.
@@ -31,6 +31,7 @@ Resources:
 - [play.golang.org](play.golang.org)
 - [Pluralsight Go fundamentals](https://app.pluralsight.com/library/courses/go-fundamentals)
 - [Pluralsight Gin Go](https://app.pluralsight.com/library/courses/gin-go-web-app-framework/table-of-contents)
+
 
 # <a name="day2"></a>Day 2: Hapi.js
 In the spirit of setting up a web server with Go, I'm continuing the exploration around web servers with Hapi.js. Up until now, when I've needed to spin up a web server, I've almost exclusively reached for Express. Coming from Express, Getting started with Hapi was quite simple.
