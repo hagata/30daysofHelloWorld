@@ -7,6 +7,26 @@
         <link href="static/css/main.css" rel="stylesheet">
     </head>
     <body>
-    <h1>{{msg}}</h1>
+    <h1>hapi term</h1>
+
+    <main class="stage">
+        <section class="term">
+            <ul class="term__messages">
+                {{#each messages}}
+                <li class="term__message">
+                    <span class="timestamp">{{this.time}}</span>
+                    {{this.command}}
+                </li>
+                {{/each}}
+            </ul>
+
+            <form class="command" action="/" method="POST">
+                <input class="command__input" type="text" name="command" value="">
+            </form>
+<pre>
+{{messages}}
+</pre>
+        </section>
+    </main>
     </body>
 </html>

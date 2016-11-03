@@ -7,3 +7,8 @@
 body {
     font-family: sans-serif;
 }
+
+.stage {
+    display: flex;
+    justify-content: center;
+}

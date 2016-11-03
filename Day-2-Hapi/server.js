@@ -1,9 +1,11 @@
-'use-strict';
+'use strict';
 
 const Hapi = require('hapi');
 const Inert = require('inert');
 const Vision = require('vision');
 const Handlebars = require('handlebars');
+
+let history = [];
 
 const server = new Hapi.Server();
 server.connection({
@@ -31,6 +33,11 @@ server.route([{
     }
 },
 {
+    path: '/',
+    method: 'POST',
+    handler: commandHandler
+},
+{
     path: '/static/{path*}',
     method: 'GET',
     handler: {
@@ -41,6 +48,18 @@ server.route([{
     }
 }])
 
+function commandHandler(request, reply) {
+    let data = request.payload;
+    let message =  {
+        command: data.command,
+        time: Date.now()
+    }
+    history.push(message)
+    //capture form data
+    //set form data object
+    console.log('request', message)
+    reply.view('index', {messages: history})
+}
 
 server.start(err => {
     if (err) {
