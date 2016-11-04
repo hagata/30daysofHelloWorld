@@ -1,7 +1,11 @@
 {% extends 'base.html'%}
 {% block content %}
     <h1>Hello, Koa</h1>
-        <pre>
-            {{posts}}
-        </pre>
+
+  <ul>
+    {% for post in posts %}
+      <li><a href="/post/{{post.id}}">{{post.title}}</a></li>
+    {% endfor %}
+  </ul>
+
 {% endblock %}

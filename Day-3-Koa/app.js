@@ -16,14 +16,40 @@ let db = [];
  * Setup middleware
  */
 app.use(route.get('/', list));
-
-
+app.use(route.get('/posts/new', add));
+app.use(route.get('/post/:id', show));
+app.use(route.post('/post', create));
 
 /**
  * Setup route generators
  */
 function* list() {
-    this.body = yield view('list', {posts: db})
+    console.log('DATABASE:', db)
+    this.body = yield view('list', {posts: db});
+}
+
+function* add() {
+    this.body = yield view('new');
+}
+
+function* show(id) {
+    console.log('show id', id);
+    let post = db[id]
+    if (!post) {
+        this.throw(404, 'invalid post id');
+    }
+    this.body = yield view('post', {post: post})
+}
+
+function* create() {
+    console.log('POST')
+    let post = yield parse(this);
+
+    console.log(post)
+    let id = db.push(post) -1;
+    post.created =  new Date().toISOString().replace(/T/, ' ').replace(/\..+/, '');
+    post.id = id;
+    this.redirect('/');
 }
 
 
