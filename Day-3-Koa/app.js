@@ -2,6 +2,7 @@
 
 const Koa = require('koa');
 const route = require('koa-route');
+const staticRoute = require('koa-static');
 const parse = require('co-body');
 // const render = require('./lib/render');
 const views = require('co-views');
@@ -15,6 +16,7 @@ let db = [];
 /**
  * Setup middleware
  */
+app.use(staticRoute('./static'));
 app.use(route.get('/', list));
 app.use(route.get('/posts/new', add));
 app.use(route.get('/post/:id', show));
