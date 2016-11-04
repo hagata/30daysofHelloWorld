@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="/styles/main.css" rel="stylesheet">
+    </head>
+    <body>
+    <nav>
+        <p class="page-title">Basic Koa.js</p>
+        <a href="/" class="mainnav__link">Home</a>
+        <a href="/posts/new" class="mainnav__link">New Post</a>
+    </nav>
+    <main class="stage">
+        {% block content %}
+        {% endblock %}
+    </main>
+    </body>
+</html>

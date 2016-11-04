@@ -9,6 +9,7 @@ In 30 days, I'm challenging myself to experiment with different frameworks, lang
 Contents:
 - [Day 1: Go lang](#day1)
 - [Day 2: Hapi.js](#day2)
+- [Day 3: Koa.js](#day3)
 
 ___
 
@@ -45,3 +46,16 @@ Resources:
 - [Hapijs.com official Tutorials](http://hapijs.com/tutorials)
 - [Post example](https://github.com/paullang/hapi-post-example)
 - [Pluralsight Building web applications w/ Hapi](https://app.pluralsight.com/library/courses/hapi-building-web-applications/table-of-contents)
+
+# <a name="day3"></a>Day 3: Koa
+Koa was designed by those who brought us Express and feels like Express 2.0, or how Express would have been built today. Koa is a light-weight, callback-less framework. Koa uses ES6 (ES2015) Generators for everything. There is no pre-bundled middle wear in Kia, which means everything is a plug-in—I’m noticing more and more people are adopting this bare-minimum platform pattern with plugins/modules/extensions, these days.
+
+Koa vs. Hapi vs. Express? Numerous blogs do in-depth analysis on this topic ([Such as this one on AirPair](https://www.airpair.com/node.js/posts/nodejs-framework-comparison-express-koa-hapi)). In my opinion,  I don't think you can go wrong with any of the platforms; it depends on personal preference. Koa seems to be the "lightest" and being Generator based has advantages. Plus, Koa "Makes writing servers fast and enjoyable."
+
+## Learning curves
+Everything in Koa uses Generator functions, which, before this I hadn't  spent much time with in practical, real-world use. Koa is the first thing I’ve seen using Generators (and they utilized them way back before Node fully supported them) in a non-academic way. The whole architecture uses generators instead of callback functions to be light and clean; which Koa is. Once you understand how to work with Generators, and how to `yield`, building a project is straightforward and efficient. 
+
+Resources:
+[Koa homepage](http://koajs.com/)
+[Pluralsight Intro to Koa Js](https://app.pluralsight.com/library/courses/javascript-koa-introduction/table-of-contents)
+[Koa Examples](https://github.com/koajs/examples)

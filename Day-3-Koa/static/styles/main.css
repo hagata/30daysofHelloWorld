@@ -1,0 +1,56 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #f5f5f5;
+    color: rgba(0, 0, 0, 0.88);
+    font-family: sans-serif;
+}
+
+nav {
+    background: white;
+    padding: 2rem;
+    display: flex;
+}
+
+nav a,
+nav p {
+    margin-right: .5rem;
+}
+
+nav .page-title {
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.stage {
+    max-width: 800px;
+    margin: 2rem auto;
+    background: white;
+    padding: 2rem;
+    border: 1px solid #b3b3b3;
+}
+
+.addform {
+    display: flex;
+    flex-direction: column;
+}
+
+.addform input[type="text"] {
+    font-size: 2rem;
+    padding: 0.225rem;
+}
+
+.addform input[type="submit"] {
+    background-color: #2196F3;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 2rem;
+    line-height: 2;
+    margin: 1rem 0;
+    text-transform: uppercase;
+}
