@@ -10,7 +10,7 @@ Contents:
 - [Day 1: Go lang](#day1)
 - [Day 2: Hapi.js](#day2)
 - [Day 3: Koa.js](#day3)
-- [Day 3: Hug API framework](#day4)
+- [Day 4: Hug API framework](#day4)
 
 ___
 
