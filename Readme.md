@@ -10,6 +10,7 @@ Contents:
 - [Day 1: Go lang](#day1)
 - [Day 2: Hapi.js](#day2)
 - [Day 3: Koa.js](#day3)
+- [Day 3: Hug API framework](#day4)
 
 ___
 
@@ -59,3 +60,19 @@ Resources:
 [Koa homepage](http://koajs.com/)
 [Pluralsight Intro to Koa Js](https://app.pluralsight.com/library/courses/javascript-koa-introduction/table-of-contents)
 [Koa Examples](https://github.com/koajs/examples)
+
+
+#<a name="day4"></a> Day 4 - Hug API framework
+
+Hug + Python. It took some time to figure out what to design that was API only, but once I decided to build a simple random message app, things were easy. I didn’t get in too deep into all the features I would have liked to use in Hug, but I did see some parts that I would like to explore more of, mainly custom directives.
+
+Hug makes writing API’s simple—as promised—once you know the syntax and how to use the decorators. The automatic documentation and error handling is very nice. I had planned to integrate swagger as part of day for documentation but found it wasn’t necessary (plus I was short on time)
+
+## Learning curves
+I struggled the most with creativity in trying to design an app “API first” Technically, the setup and installation process of Python 3.3, virtualenv, and hug took time and patience.
+
+Resources:
+Hug is not an easy framework to Google. Resources were a bit scarce compared to the larger frameworks I’m used to.
+- [Hug.rest quickstart](http://www.hug.rest/website/quickstart)
+- [Hug.rest Learn](http://www.hug.rest/website/learn/)
+- [Hug examples code, Github](https://github.com/timothycrosley/hug/tree/develop/examples)

@@ -1,0 +1,1 @@
+web: gunicorn mindful_app:__hug_wsgi__
