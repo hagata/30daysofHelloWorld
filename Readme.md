@@ -11,6 +11,7 @@ Contents:
 - [Day 2: Hapi.js](#day2)
 - [Day 3: Koa.js](#day3)
 - [Day 4: Hug API framework](#day4)
+- [Day 5: Django: scratching the surface](#day5)
 
 ___
 
@@ -62,7 +63,7 @@ Resources:
 [Koa Examples](https://github.com/koajs/examples)
 
 
-#<a name="day4"></a> Day 4 - Hug API framework
+# <a name="day4"></a>Day 4 - Hug API framework
 
 Hug + Python. It took some time to figure out what to design that was API only, but once I decided to build a simple random message app, things were easy. I didn’t get in too deep into all the features I would have liked to use in Hug, but I did see some parts that I would like to explore more of, mainly custom directives.
 
@@ -76,3 +77,19 @@ Hug is not an easy framework to Google. Resources were a bit scarce compared to 
 - [Hug.rest quickstart](http://www.hug.rest/website/quickstart)
 - [Hug.rest Learn](http://www.hug.rest/website/learn/)
 - [Hug examples code, Github](https://github.com/timothycrosley/hug/tree/develop/examples)
+
+# <a name="day5"></a>Day 5 Django: The non-templating parts
+Over the last year, I’ve used Jinja2 almost daily but never got around to checking out Django. Since I’m already familiar with the tempting _style_, the goal for today was to see all the other features Django has to offer.
+
+The Django environment—at least from my minimal experience–is a fully considered development environment with all kinds of conveniences built in for developers; like a web server and simplified interactions and queries with databases.
+
+Django aims to make developers more productive, and I think it does that well. I would say its similar to having a well-considered development environment built on Gulp, Grunt or similar tooling stack. The difference being that it has everything you need to get started writing your app without the overhead of installing and setting up your own tooling.
+
+## Learning curves
+Not a big deal, but in Django, the term “app” doesn’t refer to the entire application, but is more similar to “module.” The nature of the Django MVT(Model View Template, a variation of MVC–Model View Controller) architecture is to have a lot of files spread out, which is a bit cumbersome in the beginning. Fully comprehending which file needs which dependency takes practice and time.
+
+Django has many proprietary commands that are required to work with Django, such as `python manage.py sqlmigrate` which are challenging to memorize right away. A cheatsheet or more time is needed (as is with most everything) to become fluent.
+
+Resources
+- [Official Django docs](https://docs.djangoproject.com/en/1.10/intro/overview/)
+- [Pluralsight Django fundamentals](https://app.pluralsight.com/library/courses/django-fundamentals/table-of-contents)
