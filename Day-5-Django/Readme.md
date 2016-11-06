@@ -1,0 +1,2 @@
+# Intro to Django
+This project is a direct example of the official "Polls" project tutorial found on the Django documentation site [https://docs.djangoproject.com/en/1.10/intro/tutorial01/](https://docs.djangoproject.com/en/1.10/intro/tutorial01/). Django is a broad framework that can do many things for developers. It is a large task to try and learn all of what it has to offer, especially in a few hours within one day. The previously mentioned and linked tutorial is an excellent way to get hand on experience with most of the key features within the framework.
