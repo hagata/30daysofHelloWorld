@@ -1,4 +1,7 @@
 {
     "name":"hello",
-    "main":"index.js"
+    "main":"index.js",
+    "plugin":{
+        "provides":["hello"]
+    }
 }

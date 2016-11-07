@@ -2,7 +2,7 @@
     "name":"server",
     "main":"index.js",
     "plugin": {
-        "consumes":[],
+        "consumes":["hello"],
         "provides":[]
     }
 }
