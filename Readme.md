@@ -12,6 +12,7 @@ Contents:
 - [Day 3: Koa.js](#day3)
 - [Day 4: Hug API framework](#day4)
 - [Day 5: Django: scratching the surface](#day5)
+- [Day 6: Architect: Dependency injection](#day6)
 
 ___
 
@@ -93,3 +94,19 @@ Django has many proprietary commands that are required to work with Django, such
 Resources
 - [Official Django docs](https://docs.djangoproject.com/en/1.10/intro/overview/)
 - [Pluralsight Django fundamentals](https://app.pluralsight.com/library/courses/django-fundamentals/table-of-contents)
+
+#<a name="day6"></a> Day 6: Node Architect [Dependency injection]
+I’ve been looking forward to trying Architect for Node for the last month. What I’ve read sounded promising, a lightweight, node-style framework for dependency injection. In other words, a simple framework for using plug-ins within an app. This type of application architecture would be perfect for allowing third-party plug-ins to be installed to different instances of an application—think Wordpress or Slack for example. Architect does make it easy to setup dependencies and create API's from one plug-in to another; called "consumes" and "provides" within the application. 
+
+Project support for Architect is a bit lacking. While it’s still a viable framework, is not maintained in the official repository, but instead in the Coud9 core; as explained in this issue https://github.com/c9/architect/issues/48. Because of minimal support documentation is lacking. As easy and quick as Architect can be, without proper documentation, it’s hard to recommend it to someone who is looking for a speedy resolution. It takes time digging through the source code and an understanding of Node.js to figure out how to make it work. 
+
+Given an abundance of free time, I would love to write documentation for Architect and solve some of the issues around getting started. I have to wonder if it would be a worthwhile project to write my own Architect inspired, modern, dependency injection/inversion of control type framework to solve my “plug-in store” application problem.
+
+## Learning curves.
+As mentions, Documentation is pretty scarce and limited to two examples in the official GitHub repo and a handful of blogs around the internet. There should be more support and better documentation! 
+
+Resources:
+- [c9/architect on Github](https://github.com/c9/architect)
+- [Architecture Using Architect](https://medium.com/@ohbytheway/architecture-using-architect-8c8bb7d0277a#.lfbmvvax1)
+- [Dependency injection in node js](https://mario.fyi/dependency-injection-in-node-js-and-other-architectural-patterns/)
+- [Dependency injection in JS using architect](http://zedapp.org/2014/04/dependency-injection-in-javascript-using-architect/)
