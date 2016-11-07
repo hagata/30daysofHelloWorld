@@ -1,0 +1,8 @@
+{
+    "name":"server",
+    "main":"index.js",
+    "plugin": {
+        "consumes":["hello"],
+        "provides":[]
+    }
+}
