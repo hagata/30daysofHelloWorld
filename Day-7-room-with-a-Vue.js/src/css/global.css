@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+
+.stage {
+    max-width: 640px;
+    margin: 0 auto;
+}
+
+.stage__heading {
+    color: #9E9E9E;
+    font-weight: 100;
+    letter-spacing: 1px;
+    margin: 1rem 0;
+    text-align: center;
+}
+
+.random-quote {
+    color: #5e99b4;
+    font-size: 2.9rem;
+    line-height: 1.2;
+    margin: 3rem 0;
+}
+
+.mindful-generator {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.generator {
+    background: #673AB7;
+    border: none;
+    color: white;
+    font-size: 1rem;
+    padding: 0.55rem 1.3rem;
+    text-transform: uppercase;
+    width: 240px;
+}
