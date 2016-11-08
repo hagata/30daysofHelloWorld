@@ -13,6 +13,7 @@ Contents:
 - [Day 4: Hug API framework](#day4)
 - [Day 5: Django: scratching the surface](#day5)
 - [Day 6: Architect: Dependency injection](#day6)
+- [Day 7: Vue.js](#day7)
 
 ___
 
@@ -110,3 +111,15 @@ Resources:
 - [Architecture Using Architect](https://medium.com/@ohbytheway/architecture-using-architect-8c8bb7d0277a#.lfbmvvax1)
 - [Dependency injection in node js](https://mario.fyi/dependency-injection-in-node-js-and-other-architectural-patterns/)
 - [Dependency injection in JS using architect](http://zedapp.org/2014/04/dependency-injection-in-javascript-using-architect/)
+
+#<a name="day7"></a> Day 7: Vue.js!
+Before jumping in to check out Vue.js, I had heard a lot of good things about the framework. After watching Evan You ([@youyuxi](https://twitter.com/youyuxi))’s talk on Vue.js, it seems that it is in line with my current thinking around how frameworks should work. In a nutshell, that is being less prescriptive, but extensible. The idea of a “progressive framework” sounds good–and in Vue.js’s case, works well. I haven’t formed a solid opinion on whether or not I like the idea of keeping all of the HTML, CSS, and JS of a component smushed in one file (in the past I’ve been against it), but so far in Vue, it works OK.
+
+For my dip into Vue, I spent more time playing with the well-documented examples on the official site, watching the talk, and reading through the documentation and source code of Vue. I didn’t get too much hands on time with this, but it is something I look forward to re-visiting in the future. 
+
+## Learning curves
+As with every framework, there is a prescribed way to do things. Setting up a new Vue project is pretty painless. The biggest hurdle is probably learning what Vue can do, how it handles it and learning to write the code to execute it. 
+
+Resources:
+- [Vue.js Official guide](https://vuejs.org/v2/guide/)
+- [Vue.js Talk by Evan You](https://www.youtube.com/watch?v=pBBSp_iIiVM&feature=youtu.be)
