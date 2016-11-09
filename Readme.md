@@ -128,9 +128,9 @@ Resources:
 #<a name="day8"></a> Day 8: Typescript
 Typescript is/can be used with Angular 2, so I wanted to spend some time working with TypeScript separate from A2.
 
-Syntactic sugar for writing clean code. An example is `namespace` and `export` which compiles to an immediately invoked function. One of the big take aways is that since TypeScript compiles to regular Javascript, the rules in TS are not help true at run time. TypeScript is largely (almost 100%) a developer tool for writing more descriptive code.
+TypeScript is essentially syntactic sugar for writing clean Javascript. An example is `namespace` and `export` which simply compile down to an immediately invoked function to keep namespaced items block scoped. This is the big take away, since TypeScript compiles to regular Javascript, the rules in TS are not held true at run time but are at compile time. TypeScript is largely (almost 100%) a developer tool for writing more descriptive code. It makes sense to reach for Typescript to keep code organized and "strict".
 
-Bonus -> Typescript development in VSCode is very nice. Basically, Intellisense is very helpful.
+As a bonus, TypeScript development in VSCode is very nice.
 
 ## Learning curves
 Most of what typescript offers is very straightforward. There are only a few new things to learn as far as syntax and definition go, to get started. A couple things still have me a bit confused (after only a couple of hours) and that is type declaration for Arrays and Generics–since I don’t come from a static typed language like C+ or Java.
