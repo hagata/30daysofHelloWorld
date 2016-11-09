@@ -14,6 +14,7 @@ Contents:
 - [Day 5: Django: scratching the surface](#day5)
 - [Day 6: Architect: Dependency injection](#day6)
 - [Day 7: Vue.js](#day7)
+- [Day 8: TypeScript](#day8)
 
 ___
 
@@ -123,3 +124,18 @@ As with every framework, there is a prescribed way to do things. Setting up a ne
 Resources:
 - [Vue.js Official guide](https://vuejs.org/v2/guide/)
 - [Vue.js Talk by Evan You](https://www.youtube.com/watch?v=pBBSp_iIiVM&feature=youtu.be)
+
+#<a name="day8"></a> Day 8: Typescript
+Typescript is/can be used with Angular 2, so I wanted to spend some time working with TypeScript separate from A2.
+
+Syntactic sugar for writing clean code. An example is `namespace` and `export` which compiles to an immediately invoked function. One of the big take aways is that since TypeScript compiles to regular Javascript, the rules in TS are not help true at run time. TypeScript is largely (almost 100%) a developer tool for writing more descriptive code.
+
+Bonus -> Typescript development in VSCode is very nice. Basically, Intellisense is very helpful.
+
+## Learning curves
+Most of what typescript offers is very straightforward. There are only a few new things to learn as far as syntax and definition go, to get started. A couple things still have me a bit confused (after only a couple of hours) and that is type declaration for Arrays and Generics–since I don’t come from a static typed language like C+ or Java.
+
+Resources:
+- [Lynda.com TypeScript essential training](https://www.lynda.com/Typescript-tutorials/TypeScript-Essential-Training/421807-2.html)
+- [TypeScript in VSCode](https://code.visualstudio.com/Docs/languages/typescript)
+- [TypeScript Playground](https://www.typescriptlang.org/play/index.html)
