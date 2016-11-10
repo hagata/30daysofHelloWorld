@@ -15,6 +15,7 @@ Contents:
 - [Day 6: Architect: Dependency injection](#day6)
 - [Day 7: Vue.js](#day7)
 - [Day 8: TypeScript](#day8)
+- [Day 9: Angular 2 + TypeScript fun](#day9)
 
 ___
 
@@ -139,3 +140,18 @@ Resources:
 - [Lynda.com TypeScript essential training](https://www.lynda.com/Typescript-tutorials/TypeScript-Essential-Training/421807-2.html)
 - [TypeScript in VSCode](https://code.visualstudio.com/Docs/languages/typescript)
 - [TypeScript Playground](https://www.typescriptlang.org/play/index.html)
+
+#<a name="day9"></a> Day 9: Angular 2
+A couple of years ago I had small projects that ran on Angular 1.4 (I think it was 1.4). Since then, I haven’t spent any time following Angular other than simply being aware that Angular 2 came out. Today I wanted to give A2 a try coupled with my newly acquired familiarity with TypeScript.
+
+The largest difference I noticed (from 1.4) was the setup and tooling is now much more complicated than just adding a single Angular source file. The `Package.json` and `tsconfig.json` are quite large on their own and understand what the functionality of each setting and dependency is a lot of overhead. Not to mention the tooling to build ES6 modules with System.js, Webpack, Browserify, or similar. The quick start guide is helpful, and there is a CLI tool that can help with the boilerplate code.
+
+Frameworks as large as Angular inspire me to spend more time with them. A few hours in a single day is not enough time to experience even just the basics.
+
+## Learning Curves
+The setup and configuration overhead is a bit cumbersome. As with all comprehensive frameworks, there is going to be an investment that one needs to make in learning all of the proprietary syntax and keywords (e.g., Angular core components, decorators, “ng” keywords). Knowing Javascript well is probably a good prerequisite to Angular since some of the patterns seem complicated for a beginner—not to mention the added layer of TypeScript.
+
+Resources:
+[Official Angular 2 Quickstart](https://angular.io/docs/ts/latest/quickstart.html)
+[Frontend Masters Building Angular2 Apps](https://frontendmasters.com/courses/angular-2/)
+[Angular2 tutorial for beginners](https://www.youtube.com/watch?v=_-CD_5YhJTA)
