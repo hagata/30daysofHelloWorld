@@ -176,6 +176,6 @@ Setup on a new machine will take time. However, if you're working with React on 
 Bonus: somehow I broke `npm`, so that took more time to repair.
 
 Resources:
-[React Native official docs](https://facebook.github.io/react-native/releases/0.24/docs/getting-started.html)
-[Android setup](https://facebook.github.io/react-native/releases/0.24/docs/android-setup.html)
-[FE Masters React](https://frontendmasters.com/courses/react-native/)
+- [React Native official docs](https://facebook.github.io/react-native/releases/0.24/docs/getting-started.html)
+- [Android setup](https://facebook.github.io/react-native/releases/0.24/docs/android-setup.html)
+- [FE Masters React](https://frontendmasters.com/courses/react-native/)
