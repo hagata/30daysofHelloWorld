@@ -5,3 +5,5 @@ _dist/
 .vscode/
 Day-9-Angular-2-with-TS/app/*.js
 Day-9-Angular-2-with-TS/app/*.map
+Day-10-React-Native/Todo/android/
+Day-10-React-Native/Todo/ios/
