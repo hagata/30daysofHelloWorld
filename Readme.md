@@ -16,6 +16,7 @@ Contents:
 - [Day 7: Vue.js](#day7)
 - [Day 8: TypeScript](#day8)
 - [Day 9: Angular 2 + TypeScript fun](#day9)
+- [Day 10: React Native!](#day10)
 
 ___
 
@@ -155,3 +156,26 @@ Resources:
 [Official Angular 2 Quickstart](https://angular.io/docs/ts/latest/quickstart.html)
 [Frontend Masters Building Angular2 Apps](https://frontendmasters.com/courses/angular-2/)
 [Angular2 tutorial for beginners](https://www.youtube.com/watch?v=_-CD_5YhJTA)
+
+#<a name="day10"></a> Day 10: React Native
+
+React Native is more of a _platform_ than a framework and it's  powerful platform. I have little React experience, only a couple applications I’ve helped build. One of the benefits of React Native is that any knowledge you have from React web transfers over (it’s the same) and can be used to build native applications.
+
+Writing the application code should be [is] easy to pick up for anyone used to ES6 or have a pretty strong understanding of Javascript. The ‘base’ application code or the minimum amount of setup you need to start a project isn’t overwhelming. The command line tool takes care of many tasks, including starting a new project and building the app in iOS/Android simulators (unless you break things like me)
+
+Since I haven’t done any Android development, ever, the setup process to use [Genymotion](https://www.genymotion.com/fun-zone/) and Android SDK along with React Native ate up all the time I had devoted to the project today. On the plus side, now I have it all set-up for future projects.
+
+## Learning curves
+React Native is a solid platform and the products built on it out in the wild are proof that it's a stable platform for your project. A reoccurring them, at the risk of being too repetitive, is that large frameworks require time and experience to learn all of the proprietary commands, architecture, and nuances. Because React native is javascript with some different syntax and a less-traditional way of handling project organization (separation of HTML, CSS, JS, directory structure, etc.) it can be challenging to adopt. 
+
+Once dependencies are installed, getting the hot reloading working and the app to build and refresh in the native device simulators was troublesome.
+
+Along those same lines, the initial setup and build process took a long time to get dependencies working properly, etc. It took me over an hour for everything.
+Setup on a new machine will take time. However, if you're working with React on a regular basis, it shouldn't be a problem.
+
+Bonus: somehow I broke `npm`, so that took more time to repair.
+
+Resources:
+[React Native official docs](https://facebook.github.io/react-native/releases/0.24/docs/getting-started.html)
+[Android setup](https://facebook.github.io/react-native/releases/0.24/docs/android-setup.html)
+[FE Masters React](https://frontendmasters.com/courses/react-native/)
