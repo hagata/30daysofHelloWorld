@@ -1,3 +1,6 @@
 [submodule "Day-0.2-organizing-complex-days/example_submodule"]
 	path = Day-0.2-organizing-complex-days/example_submodule
 	url = https://github.com/hagata/ranmoji.git
+[submodule "Day-11-Ember-explorer/explorer"]
+	path = Day-11-Ember-explorer/explorer
+	url = https://github.com/hagata/ember-explorer.git
