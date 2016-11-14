@@ -18,6 +18,7 @@ Contents:
 - [Day 9: Angular 2 + TypeScript fun](#day9)
 - [Day 10: React Native!](#day10)
 - [Day 11: Touching on Ember.js](#day11)
+- [Day 12: Next.js](#day12)
 
 ___
 
@@ -196,3 +197,20 @@ Resources:
 - [FE Masters Ember](https://frontendmasters.com/courses/ember-2/)
 - [Lynda Ember.js Essential Training](https://www.lynda.com/Ember-js-tutorials/Ember-js-Essential-Training/480960-2.html)
 - [Official Ember starter guide](https://guides.emberjs.com/v2.9.0/tutorial/routes-and-templates/)
+
+#<a name="day12"></a> Day 12: Next.js
+Next.js is a “universal Javascript application” framework built on top of React, Webpack, and Babel. Next.js does a lot of cool things under the hood to solve a lot of performance problems often seen in other applications. One major thing Next does is automatic code splitting; this is managed through explicit dependency management with ES6 module imports—I like this a lot.
+
+With tucking most of the framework engine under the hood, Next keeps the directory structure clean and minimal. I always appreciate clean folders and this is perfect for developers who don’t like folder cruft. 
+
+Next is brand new as of last month (Oct 2016) and under current development. It’s production ready now (Nov 2016) and while it is powerful as is, there is a promising roadmap outlined in the [official repository](https://github.com/zeit/next.js). With tooling included and only one node module to install, getting a project running with Next is extremely fast and convenient.
+
+## Learning curves
+Next is an opinionated framework. It strictly enforces patterns on how to manage pages and components–as do many frameworks. The development process is quite simple since currently, developers only need to be concerned with pages and components; which each contain explicit dependencies and markup. Getting used to this _simplified_ application architecture might take some time.
+
+Coming from React will help a lot since Next is built on top of it. Next.js's decision to use Glamor for CSS in JavaScript can be a slight learning curve (or perceived downside) if you're not familiar or in favor of Styles in JavaScript.
+
+Resources:
+- [Official next blog](https://zeit.co/blog/next)
+- [Github readme](https://github.com/zeit/next.js)
+- [Glamor Repository](https://github.com/threepointone/glamor)
