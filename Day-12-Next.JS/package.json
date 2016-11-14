@@ -10,5 +10,9 @@
   "license": "ISC",
   "dependencies": {
     "next": "^1.1.1"
+  },
+  "devDependencies": {
+    "eslint": "^3.10.0",
+    "eslint-config-google": "^0.7.0"
   }
 }
