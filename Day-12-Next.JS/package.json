@@ -1,0 +1,14 @@
+{
+  "name": "intro-to-next-js",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "next": "^1.1.1"
+  }
+}
