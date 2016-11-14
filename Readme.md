@@ -17,6 +17,7 @@ Contents:
 - [Day 8: TypeScript](#day8)
 - [Day 9: Angular 2 + TypeScript fun](#day9)
 - [Day 10: React Native!](#day10)
+- [Day 11: Touching on Ember.js](#day11)
 
 ___
 
@@ -179,3 +180,19 @@ Resources:
 - [React Native official docs](https://facebook.github.io/react-native/releases/0.24/docs/getting-started.html)
 - [Android setup](https://facebook.github.io/react-native/releases/0.24/docs/android-setup.html)
 - [FE Masters React](https://frontendmasters.com/courses/react-native/)
+
+#<a name="day11"></a> Day 11: Touching on Ember.js
+
+Ember is one of those frameworks that I’ve heard of for a long time and never took the time to explore. Ember’s “Convention over Configuration” philosophy means that with the help of the Ember CLI (command line interface), project directory structure, file name conventions, etc. are all predefined, and developers are expected to work within this convention. The strict convention could be considered an advantage, or disadvantage depending on one's personal style.
+
+Compared to other Javascript Frameworks, I find that the Ember CLI and tooling are excellent. There are many developer conveniences included, like live a live reloading server and testing; which makes getting started developing an app, quick.
+
+## Learning curves
+The standard amount of getting used to the pre-configured, pre-architected structure of a framework is required, but the effort level is relatively low with Ember.
+
+Mastering all of what Ember has to over will take time. I’m especially interested in spending more time with Ember Data and the way it interacts with _any_ backend and normalizes data queries 
+
+Resources:
+- [FE Masters Ember](https://frontendmasters.com/courses/ember-2/)
+- [Lynda Ember.js Essential Training](https://www.lynda.com/Ember-js-tutorials/Ember-js-Essential-Training/480960-2.html)
+- [Official Ember starter guide](https://guides.emberjs.com/v2.9.0/tutorial/routes-and-templates/)
