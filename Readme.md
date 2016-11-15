@@ -19,6 +19,7 @@ Contents:
 - [Day 10: React Native!](#day10)
 - [Day 11: Touching on Ember.js](#day11)
 - [Day 12: Next.js](#day12)
+- [Day 13: R Programming](#day13)
 
 ___
 
@@ -62,7 +63,7 @@ Koa was designed by those who brought us Express and feels like Express 2.0, or 
 Koa vs. Hapi vs. Express? Numerous blogs do in-depth analysis on this topic ([Such as this one on AirPair](https://www.airpair.com/node.js/posts/nodejs-framework-comparison-express-koa-hapi)). In my opinion,  I don't think you can go wrong with any of the platforms; it depends on personal preference. Koa seems to be the "lightest" and being Generator based has advantages. Plus, Koa "Makes writing servers fast and enjoyable."
 
 ## Learning curves
-Everything in Koa uses Generator functions, which, before this I hadn't  spent much time with in practical, real-world use. Koa is the first thing I’ve seen using Generators (and they utilized them way back before Node fully supported them) in a non-academic way. The whole architecture uses generators instead of callback functions to be light and clean; which Koa is. Once you understand how to work with Generators, and how to `yield`, building a project is straightforward and efficient. 
+Everything in Koa uses Generator functions, which, before this I hadn't  spent much time with in practical, real-world use. Koa is the first thing I’ve seen using Generators (and they utilized them way back before Node fully supported them) in a non-academic way. The whole architecture uses generators instead of callback functions to be light and clean; which Koa is. Once you understand how to work with Generators, and how to `yield`, building a project is straightforward and efficient.
 
 Resources:
 [Koa homepage](http://koajs.com/)
@@ -102,14 +103,14 @@ Resources
 - [Pluralsight Django fundamentals](https://app.pluralsight.com/library/courses/django-fundamentals/table-of-contents)
 
 #<a name="day6"></a> Day 6: Node Architect [Dependency injection]
-I’ve been looking forward to trying Architect for Node for the last month. What I’ve read sounded promising, a lightweight, node-style framework for dependency injection. In other words, a simple framework for using plug-ins within an app. This type of application architecture would be perfect for allowing third-party plug-ins to be installed to different instances of an application—think Wordpress or Slack for example. Architect does make it easy to setup dependencies and create API's from one plug-in to another; called "consumes" and "provides" within the application. 
+I’ve been looking forward to trying Architect for Node for the last month. What I’ve read sounded promising, a lightweight, node-style framework for dependency injection. In other words, a simple framework for using plug-ins within an app. This type of application architecture would be perfect for allowing third-party plug-ins to be installed to different instances of an application—think Wordpress or Slack for example. Architect does make it easy to setup dependencies and create API's from one plug-in to another; called "consumes" and "provides" within the application.
 
-Project support for Architect is a bit lacking. While it’s still a viable framework, is not maintained in the official repository, but instead in the Coud9 core; as explained in this issue https://github.com/c9/architect/issues/48. Because of minimal support documentation is lacking. As easy and quick as Architect can be, without proper documentation, it’s hard to recommend it to someone who is looking for a speedy resolution. It takes time digging through the source code and an understanding of Node.js to figure out how to make it work. 
+Project support for Architect is a bit lacking. While it’s still a viable framework, is not maintained in the official repository, but instead in the Coud9 core; as explained in this issue https://github.com/c9/architect/issues/48. Because of minimal support documentation is lacking. As easy and quick as Architect can be, without proper documentation, it’s hard to recommend it to someone who is looking for a speedy resolution. It takes time digging through the source code and an understanding of Node.js to figure out how to make it work.
 
 Given an abundance of free time, I would love to write documentation for Architect and solve some of the issues around getting started. I have to wonder if it would be a worthwhile project to write my own Architect inspired, modern, dependency injection/inversion of control type framework to solve my “plug-in store” application problem.
 
 ## Learning curves.
-As mentions, Documentation is pretty scarce and limited to two examples in the official GitHub repo and a handful of blogs around the internet. There should be more support and better documentation! 
+As mentions, Documentation is pretty scarce and limited to two examples in the official GitHub repo and a handful of blogs around the internet. There should be more support and better documentation!
 
 Resources:
 - [c9/architect on Github](https://github.com/c9/architect)
@@ -120,10 +121,10 @@ Resources:
 #<a name="day7"></a> Day 7: Vue.js!
 Before jumping in to check out Vue.js, I had heard a lot of good things about the framework. After watching Evan You ([@youyuxi](https://twitter.com/youyuxi))’s talk on Vue.js, it seems that it is in line with my current thinking around how frameworks should work. In a nutshell, that is being less prescriptive, but extensible. The idea of a “progressive framework” sounds good–and in Vue.js’s case, works well. I haven’t formed a solid opinion on whether or not I like the idea of keeping all of the HTML, CSS, and JS of a component smushed in one file (in the past I’ve been against it), but so far in Vue, it works OK.
 
-For my dip into Vue, I spent more time playing with the well-documented examples on the official site, watching the talk, and reading through the documentation and source code of Vue. I didn’t get too much hands on time with this, but it is something I look forward to re-visiting in the future. 
+For my dip into Vue, I spent more time playing with the well-documented examples on the official site, watching the talk, and reading through the documentation and source code of Vue. I didn’t get too much hands on time with this, but it is something I look forward to re-visiting in the future.
 
 ## Learning curves
-As with every framework, there is a prescribed way to do things. Setting up a new Vue project is pretty painless. The biggest hurdle is probably learning what Vue can do, how it handles it and learning to write the code to execute it. 
+As with every framework, there is a prescribed way to do things. Setting up a new Vue project is pretty painless. The biggest hurdle is probably learning what Vue can do, how it handles it and learning to write the code to execute it.
 
 Resources:
 - [Vue.js Official guide](https://vuejs.org/v2/guide/)
@@ -168,7 +169,7 @@ Writing the application code should be [is] easy to pick up for anyone used to E
 Since I haven’t done any Android development, ever, the setup process to use [Genymotion](https://www.genymotion.com/fun-zone/) and Android SDK along with React Native ate up all the time I had devoted to the project today. On the plus side, now I have it all set-up for future projects.
 
 ## Learning curves
-React Native is a solid platform and the products built on it out in the wild are proof that it's a stable platform for your project. A reoccurring them, at the risk of being too repetitive, is that large frameworks require time and experience to learn all of the proprietary commands, architecture, and nuances. Because React native is javascript with some different syntax and a less-traditional way of handling project organization (separation of HTML, CSS, JS, directory structure, etc.) it can be challenging to adopt. 
+React Native is a solid platform and the products built on it out in the wild are proof that it's a stable platform for your project. A reoccurring them, at the risk of being too repetitive, is that large frameworks require time and experience to learn all of the proprietary commands, architecture, and nuances. Because React native is javascript with some different syntax and a less-traditional way of handling project organization (separation of HTML, CSS, JS, directory structure, etc.) it can be challenging to adopt.
 
 Once dependencies are installed, getting the hot reloading working and the app to build and refresh in the native device simulators was troublesome.
 
@@ -191,7 +192,7 @@ Compared to other Javascript Frameworks, I find that the Ember CLI and tooling a
 ## Learning curves
 The standard amount of getting used to the pre-configured, pre-architected structure of a framework is required, but the effort level is relatively low with Ember.
 
-Mastering all of what Ember has to over will take time. I’m especially interested in spending more time with Ember Data and the way it interacts with _any_ backend and normalizes data queries 
+Mastering all of what Ember has to over will take time. I’m especially interested in spending more time with Ember Data and the way it interacts with _any_ backend and normalizes data queries
 
 Resources:
 - [FE Masters Ember](https://frontendmasters.com/courses/ember-2/)
@@ -201,7 +202,7 @@ Resources:
 #<a name="day12"></a> Day 12: Next.js
 Next.js is a “universal Javascript application” framework built on top of React, Webpack, and Babel. Next.js does a lot of cool things under the hood to solve a lot of performance problems often seen in other applications. One major thing Next does is automatic code splitting; this is managed through explicit dependency management with ES6 module imports—I like this a lot.
 
-With tucking most of the framework engine under the hood, Next keeps the directory structure clean and minimal. I always appreciate clean folders and this is perfect for developers who don’t like folder cruft. 
+With tucking most of the framework engine under the hood, Next keeps the directory structure clean and minimal. I always appreciate clean folders and this is perfect for developers who don’t like folder cruft.
 
 Next is brand new as of last month (Oct 2016) and under current development. It’s production ready now (Nov 2016) and while it is powerful as is, there is a promising roadmap outlined in the [official repository](https://github.com/zeit/next.js). With tooling included and only one node module to install, getting a project running with Next is extremely fast and convenient.
 
@@ -214,3 +215,15 @@ Resources:
 - [Official next blog](https://zeit.co/blog/next)
 - [Github readme](https://github.com/zeit/next.js)
 - [Glamor Repository](https://github.com/threepointone/glamor)
+
+#<a name="day13"></a> Day 13: Taking a break from JS with R programming
+R programming has a reputation for being the best language for statistical analysis. After spending a bit of time with R, I can see how easy it is to work with and how powerful it can be when used with large datasets. R can crunch numbers and show correlations as well as distributions. Additionally, R is used for Machine Learning and other things like image processing and facial recognition.
+
+R syntax is straightforward and similar in ways to Python; which makes jumping in easy. I started with R in the terminal, tried out RStudio and VSCode with R ([Tutorial on how to setup the R process in VSCode](http://jdav.is/2015/07/28/r-with-visual-studio-code/)). As much as I currently enjoy using VSCode, for something like R, a dedicated IDE is better. RStudio has great visualizations built in (one of R’s main features!), project management, plug-in management, git, and more!
+
+## Learning curves
+If you’re not a stats person or used to working with vectors; this can take a bit of a dive plus experience to understand fully. Finding the right project or use case to become thoroughly acquainted with R programming is tricky. Since the power of R comes from processing data, getting a real dataset to practice with is key.
+
+Resources:
+- [R Tutorial](https://statsguys.wordpress.com/2014/01/03/first-post/)
+- [Lynda.com Up and running with R](https://www.lynda.com/R-tutorials/Up-Running-R/120612-2.html)
