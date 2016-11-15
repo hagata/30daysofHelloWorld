@@ -216,7 +216,7 @@ Resources:
 - [Github readme](https://github.com/zeit/next.js)
 - [Glamor Repository](https://github.com/threepointone/glamor)
 
-#<a name="day13></a> Day 13: Taking a break from JS with R programming
+#<a name="day13"></a> Day 13: Taking a break from JS with R programming
 R programming has a reputation for being the best language for statistical analysis. After spending a bit of time with R, I can see how easy it is to work with and how powerful it can be when used with large datasets. R can crunch numbers and show correlations as well as distributions. Additionally, R is used for Machine Learning and other things like image processing and facial recognition.
 
 R syntax is straightforward and similar in ways to Python; which makes jumping in easy. I started with R in the terminal, tried out RStudio and VSCode with R ([Tutorial on how to setup the R process in VSCode](http://jdav.is/2015/07/28/r-with-visual-studio-code/)). As much as I currently enjoy using VSCode, for something like R, a dedicated IDE is better. RStudio has great visualizations built in (one of R’s main features!), project management, plug-in management, git, and more!
