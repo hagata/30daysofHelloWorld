@@ -20,6 +20,7 @@ Contents:
 - [Day 11: Touching on Ember.js](#day11)
 - [Day 12: Next.js](#day12)
 - [Day 13: R Programming](#day13)
+- [Day 14: Attempt at understanding Haskell](#day14)
 
 ___
 
@@ -227,3 +228,20 @@ If you’re not a stats person or used to working with vectors; this can take a 
 Resources:
 - [R Tutorial](https://statsguys.wordpress.com/2014/01/03/first-post/)
 - [Lynda.com Up and running with R](https://www.lynda.com/R-tutorials/Up-Running-R/120612-2.html)
+
+
+#<a name="day14"></a> Day 14: Attempt at understanding Haskell!
+Haskell is an interesting programming language. For a front-end web focused developer who spends most of the time in dynamically typed languages like Javascript and Python, Haskell is full of fun, new concepts. 
+
+Among some of the more interesting of features in Haskell are the function definition syntax and emphasis on recursion. There are no `For` loops in Haskell and all _loops_ are called through recursive function calls.
+
+## Learning Curves
+
+The, "no loops, use recursion” philosophy is tricky. I struggled to grasp the execution of recursion in Haskell entirely. Something in which I  may come back to expand. Additionally, while not super complicated, the syntax in Haskell will take a moment to get become accustomed.
+
+There are a handful of concepts that may be brand new, including pattern matching, cases, lambdas, pure functions, Monads, and non-overwriting function declarations.
+
+Resources:
+- [Learn You A Haskell](http://learnyouahaskell.com/chapters)
+- [Syntax in Haskell](http://rigaux.org/language-study/syntax-across-languages-per-language/Haskell.html)
+- [Sudoku Solver in Haskell](http://paarsgames.nl/2013/07/29/sudoku-solver-in-haskell/)
