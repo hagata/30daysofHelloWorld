@@ -16,8 +16,7 @@ class DisplayBoard {
   }
 
   socketListener() {
-    socket.on('controller.pressed.main', data => {
-      let direction = 'left';
+    socket.on('controller.pressed.main', direction => {
       console.log('caught controls');
       this.updateDirection(direction);
     });
@@ -39,11 +38,13 @@ class Controller {
   }
 
   handleEvents() {
-    this.controllerBtn.addEventListener('click', e => {
-      e.preventDefault();
-      console.log('controller button clicked');
-      socket.emit('controller.pressed.main', e);
-    });
+    const directionButtons = this.node.querySelectorAll('.direction-button');
+    for (const btn of directionButtons) {
+      btn.addEventListener('click', e => {
+        const dir = e.target.dataset.direction;
+        socket.emit('controller.pressed.main', dir);
+      });
+    }
   }
 
   init() {
