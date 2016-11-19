@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+{% block content %}
+<style>
+    .direction-buttons {
+        padding: 0;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .direction-button {
+        display: flex;
+        border: 1px solid grey;
+        height: 30vh;
+        width: 30vh;
+    }
+
+    .direction-button svg {
+        width: 100%;
+        height: 100%;
+        pointer-events: none;
+    }
+
+    .direction-button--down{transform: rotateZ(-90deg)}
+    .direction-button--up{transform: rotateZ(90deg)}
+    .direction-button--right{transform: rotateZ(180deg)}
+
+    .direction-button:hover {
+        cursor: pointer;
+    }
+</style>
+
+<main class="controller" data-component="Controller">
+    <section class="controller-directions">
+        controller!
+
+        <ul class="direction-buttons">
+            <li class="direction-button direction-button--left" data-direction="left">{% include 'includes/arrow.svg'%}</li>
+            <li class="direction-button direction-button--down" data-direction="down">{% include 'includes/arrow.svg'%}</li>
+            <li class="direction-button direction-button--up" data-direction="up">{% include 'includes/arrow.svg'%}</li>
+            <li class="direction-button direction-button--right" data-direction="right">{% include 'includes/arrow.svg'%}</li>
+        </ul>
+    </section>
+</main>
+{% endblock %}

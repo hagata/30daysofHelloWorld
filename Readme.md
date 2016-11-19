@@ -21,6 +21,7 @@ Contents:
 - [Day 12: Next.js](#day12)
 - [Day 13: R Programming](#day13)
 - [Day 14: Attempt at understanding Haskell](#day14)
+- [Day 15: Socket.io](#day15)
 
 ___
 
@@ -245,3 +246,20 @@ Resources:
 - [Learn You A Haskell](http://learnyouahaskell.com/chapters)
 - [Syntax in Haskell](http://rigaux.org/language-study/syntax-across-languages-per-language/Haskell.html)
 - [Sudoku Solver in Haskell](http://paarsgames.nl/2013/07/29/sudoku-solver-in-haskell/)
+
+#<a name="day15"></a> Day 15: Socket.io
+I’ve always come across Socket.io, but never had a project or reason to build anything with it. As a popular interface for Web Sockets, I had high hopes. I was pleased to work with the Socket.io API on both the client and server sides. Setup is easy, and using it is intuitive.
+
+The number of products/projects that you can build with Socket.io are vast and open-ended—anything that can benefit from instant data. Getting started is very quick and easy.
+
+Looking forward to building something with Socket.io!
+
+## Learning curves
+The Getting Started tutorial is good enough to get going, but the example implementations are a limited to the single chat app. Making sure that the server-side and client-side `socket` is running is important.
+
+Bridging the client/server relationship with the different `emit` and `on` methods could take a while to grab.
+
+Resources:
+- [Socket.io official getting started](http://socket.io/get-started/chat/)
+- [David Walsh web sockets blog](https://davidwalsh.name/websocket)
+- [Nodesource understanding socket-io](https://nodesource.com/blog/understanding-socketio/)
