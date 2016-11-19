@@ -1,18 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <title></title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <!--<link href="css/style.css" rel="stylesheet">-->
-        <style>
-            body {font-family: sans-serif}
-        </style>
-    </head>
-    <body>
-    <h1>Hello, Koa</h1>
-    <!--Socket IO Client-->
-    <script src="node_modules/socket.io-client/socket.io.js"></script>
-    <script src="js/app.js"></script>
-    </body>
-</html>
+{% extends 'base.html' %}
+{% block content %}
+<main class="stage">
+
+    <p class="tutorial-text">User the controller to change direction</p>
+    <h1 class="direction">—</h1>
+</main>
+{% endblock %}
