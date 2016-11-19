@@ -1,39 +1,81 @@
-// emmits 'connected'.
-console.log('%cApp Loaded', 'font-style:bold; font-size: 16px; color: #00aa11');
+'use strict';
+
+// Register global Socket
 const socket = io();
 
-// Init app
-// global events
-socket.on('controller.pressed.main', e => {
-  console.log('controller passed', e);
-});
+class DisplayBoard {
+  constructor(node) {
+    this.node = node;
+    this.outputNode = this.node.querySelector('.direction');
 
-let messageForm = document.querySelector('.message-form') || null;
-if (messageForm) {
-  let messageInput = document.querySelector('.message-input');
+    this.init();
+  }
 
-  console.log('message', messageInput);
+  updateDirection(direction) {
+    this.outputNode.innerHTML = direction;
+  }
 
-  messageForm.addEventListener('submit', e => {
-    let msg = messageInput.value;
-    e.preventDefault();
+  socketListener() {
+    socket.on('controller.pressed.main', data => {
+      let direction = 'left';
+      console.log('caught controls');
+      this.updateDirection(direction);
+    });
+  }
 
-    // Emit the socket.io event with the message data
-    socket.emit('chatMessage', msg);
-    messageInput.value = '';
-  });
+  init() {
+    this.socketListener();
+  }
 }
 
 // load modules on a page
+class Controller {
+  constructor(node) {
+    this.node = node;
 
-let controller = document.querySelector('.controller') || null;
-if (controller) {
-  console.log('controller started');
+    this.controllerBtn = this.node.querySelector('.controller-button');
 
-  let controllerBtn = document.querySelector('.controller-button');
-  controllerBtn.addEventListener('click', e => {
-    e.preventDefault();
-    console.log('controller button clicked');
-    socket.emit('controller.pressed.main', e);
-  });
+    this.init();
+  }
+
+  handleEvents() {
+    this.controllerBtn.addEventListener('click', e => {
+      e.preventDefault();
+      console.log('controller button clicked');
+      socket.emit('controller.pressed.main', e);
+    });
+  }
+
+  init() {
+    console.log('controller started');
+    this.handleEvents();
+  }
 }
+
+const modules = {
+  Controller: Controller,
+  DisplayBoard: DisplayBoard
+};
+
+const appModules = {};
+
+function loadModules() {
+  const moduleNodes = document.querySelectorAll('[data-component]');
+
+  for (const node of moduleNodes) {
+    const moduleName = node.dataset.component;
+    appModules[moduleName] = new modules[moduleName](node);
+  }
+}
+
+// Init app
+(function app() {
+  loadModules();
+  console.log('%cApp Loaded',
+    'font-style:bold; font-size: 16px; color: #00aa11');
+
+  // global events
+  socket.on('controller.pressed.main', e => {
+    console.log('controller passed', e);
+  });
+})();

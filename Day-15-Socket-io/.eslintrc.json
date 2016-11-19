@@ -1,4 +1,10 @@
 {
     "extends": "google",
-    "installedESLint": true
+    "installedESLint": true,
+    "globals": {
+        "document": false,
+        "socket": false,
+        "io": false
+    }
+
 }
