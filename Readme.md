@@ -22,6 +22,7 @@ Contents:
 - [Day 13: R Programming](#day13)
 - [Day 14: Attempt at understanding Haskell](#day14)
 - [Day 15: Socket.io](#day15)
+- [Day 16: Matter.js](#day16)
 
 ___
 
@@ -263,3 +264,20 @@ Resources:
 - [Socket.io official getting started](http://socket.io/get-started/chat/)
 - [David Walsh web sockets blog](https://davidwalsh.name/websocket)
 - [Nodesource understanding socket-io](https://nodesource.com/blog/understanding-socketio/)
+
+#<a name="day16"></a> Day 16: Matter.js Physics Engine
+I’ve wanted to get my hands on a Canvas based physics engine for quite a while. Matter.js provides a lot of functionality and as far as I know, a complete javascript physics engine—it’s also extensible with plugins if needed.
+
+Implementation of the getting started guide was easy enough and building off of it wasn’t too difficult. The game idea I had in my head to get done today was a bit over reaching for the amount of time I had to work on it. I spent the majority of the allocated time searching on how to do certain things.
+
+Given the ease of use, I wouldn’t hesitate to come back to Matter.js for any future game development. It’s lightweight and doesn’t feel like it needs excessive setup and configuration. The default physics just work out of the box.
+
+
+##Learning curves
+Learning all of a physics engine the size of Matter.js is not something that can be accomplished in a few hours. However, the API is easy to use and pick up quickly.
+
+I found that the while the API documentation is solid and the GitHub Wiki is good; it would be nice to have a bit more of the “getting started” style walkthrough guides. I found myself having to browse the API documentation and read every property/method to try and figure out how to do what I wanted to.
+
+Resources
+- [Matter.js Official Docs](http://brm.io/matter-js/docs/index.html)
+- [Matter.js Github Wiki](https://github.com/liabru/matter-js/wiki)
