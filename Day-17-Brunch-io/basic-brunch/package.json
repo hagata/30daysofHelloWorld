@@ -11,7 +11,9 @@
     "start": "brunch watch --server",
     "prod": "brunch build --production"
   },
-  "dependencies": {},
+  "dependencies": {
+    "sass-brunch": "^2.7.0"
+  },
   "devDependencies": {
     "auto-reload-brunch": "^2.0.0",
     "babel-brunch": "~6.0.0",
