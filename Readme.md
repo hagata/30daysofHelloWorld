@@ -24,6 +24,7 @@ Contents:
 - [Day 15: Socket.io](#day15)
 - [Day 16: Matter.js](#day16)
 - [Day 17: Brunch.io](#day17)
+- [Day 18: The basics of Phaser](#day18)
 
 ___
 
@@ -301,3 +302,16 @@ Resources:
 - [Brunch Guide, Readme](https://github.com/brunch/brunch-guide#readme)
 - [Brunch Sass](https://github.com/brunch/sass-brunch)
 
+#<a name="day18"></a> Day 18 The basics of Phaser
+
+Phaser is more than just a physics engine; it’s an entire HTML game platform. It has _all_ the things you need to build a game, including a robust physics engine, audio, 2D & 3D, Camera controls, text, animation input handlers, and a lot more.    
+
+Method and property names of the Phaser API are named in plain English; which makes working with Phaser easy to pick up. There is a lot to explore within Phaser, and the game possibilities seem endless. The example gallery of games built on Phaser is quite impressive. I feel that it truly is a gaming platform that can build production-ready HTML based games.
+
+## Learning Curves
+Getting started is easy enough, and the learning resources seem quite vast. There wasn’t any trouble in getting going to build my first game. The only learning curve is time to understand the capabilities and best practices. Making a fully considered game will take time learning the extent of what Phaser has to offer. 
+
+Resources:
+- [Phaser Sandbox](https://phaser.io/sandbox/edit/3)
+- [OpenGameArt, open source assets](http://opengameart.org/    )
+- [Phaser Readme](https://github.com/photonstorm/phaser/tree/v2.6.2)
