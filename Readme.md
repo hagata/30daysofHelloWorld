@@ -23,6 +23,7 @@ Contents:
 - [Day 14: Attempt at understanding Haskell](#day14)
 - [Day 15: Socket.io](#day15)
 - [Day 16: Matter.js](#day16)
+- [Day 17: Brunch.io](#day17)
 
 ___
 
@@ -281,3 +282,22 @@ I found that the while the API documentation is solid and the GitHub Wiki is goo
 Resources
 - [Matter.js Official Docs](http://brm.io/matter-js/docs/index.html)
 - [Matter.js Github Wiki](https://github.com/liabru/matter-js/wiki)
+
+#<a name="day17"></a> Day 17 Brunch
+
+Another build tool? I thought, but of course, with an open mind, I gave Brunch.io a try. Brunch simplifies tooling setup config compared other popular build tools and has a number pre-configured “skeleton” projects. In addition to the base functions, Brunch is extensible with a number of plug-ins—as you would expect.
+
+Plug-ins “Just Work,” (as advertised). I was a bit perplexed when I installed the Sass plug-in. After installation a was left with a bit of “what do I configure next” when I was surprised to see that running `brunch build` just compiled my sass. Nice.
+
+Convenient! Most of what I’d consider standard environment tools that I’m always adding to my `gulpfile.js` when in Gulp (or Grunt) is built into Brunch–like a basic server, file watching, and auto browser reload.
+
+## Learning Curves
+Configuration is simple. However, there was some discrepancy in the way the documentation is written. Some config examples are written as .js modules, some as JSON, and some as Coffee Script or YAML depending on the author.
+
+While great, the “just works” nature of plugins isn’t well explained and can be a bit confusing. With a lot of the conveniences tucked under the hood, it can be hard to understand everything; though the documentation helps a lot.
+
+Resources:
+- [Getting Started with Brunch](http://brunch.io/docs/getting-started)
+- [Brunch Guide, Readme](https://github.com/brunch/brunch-guide#readme)
+- [Brunch Sass](https://github.com/brunch/sass-brunch)
+
