@@ -25,6 +25,7 @@ Contents:
 - [Day 16: Matter.js](#day16)
 - [Day 17: Brunch.io](#day17)
 - [Day 18: The basics of Phaser](#day18)
+- [Day 19: The basics of Phaser](#day18)
 
 ___
 
@@ -284,7 +285,7 @@ Resources
 - [Matter.js Official Docs](http://brm.io/matter-js/docs/index.html)
 - [Matter.js Github Wiki](https://github.com/liabru/matter-js/wiki)
 
-#<a name="day17"></a> Day 17 Brunch
+#<a name="day17"></a> Day 17: Brunch
 
 Another build tool? I thought, but of course, with an open mind, I gave Brunch.io a try. Brunch simplifies tooling setup config compared other popular build tools and has a number pre-configured “skeleton” projects. In addition to the base functions, Brunch is extensible with a number of plug-ins—as you would expect.
 
@@ -302,7 +303,7 @@ Resources:
 - [Brunch Guide, Readme](https://github.com/brunch/brunch-guide#readme)
 - [Brunch Sass](https://github.com/brunch/sass-brunch)
 
-#<a name="day18"></a> Day 18 The basics of Phaser
+#<a name="day18"></a> Day 18: The basics of Phaser
 
 Phaser is more than just a physics engine; it’s an entire HTML game platform. It has _all_ the things you need to build a game, including a robust physics engine, audio, 2D & 3D, Camera controls, text, animation input handlers, and a lot more.    
 
@@ -313,5 +314,28 @@ Getting started is easy enough, and the learning resources seem quite vast. Ther
 
 Resources:
 - [Phaser Sandbox](https://phaser.io/sandbox/edit/3)
-- [OpenGameArt, open source assets](http://opengameart.org/    )
+- [OpenGameArt, open source assets](http://opengameart.org/)
 - [Phaser Readme](https://github.com/photonstorm/phaser/tree/v2.6.2)
+
+#<a name"day18"></a> Day 19: Rust lang
+
+Rust is another programming language that is competitive with C/C++; neither of which I've used before. However, I felt comfortable working with it even though I was very new. The syntax is slightly different from the languages I'm used to (JS, Python), and the architecture of a Rust application (as far as I know after a few hours) is very similar to a Node.js application. Similar to Node, Rust has Cargo; which makes development easy and friendly.
+
+Cargo is a package/dependency manager for Rust. Very quickly, in the Rust guide, you will switch over to using Cargo to manage the project and have to become familiar with the `Cargo.toml`  file. This file is very similar to the `package.json` file of Node NPM projects.
+
+Working with Rust is pretty friendly. There is a lot to learn, but the compiler is pretty good about reporting issues.
+
+## Learning curves
+As stated in the docs, coming from a Dynamic language (like I am) you’ll have to get used to compiling to an executable, and then running the executable—they’re two different steps. While this isn’t a big issue, it’s something to keep in mind.
+
+Rust is less forgiving with semi-colons than Javascript, so making sure all statements end in a `;` is important. Missing semi-colons will throw errors at compile time.
+
+Many concepts seem unique to Rust, or at least may be an introduction to them. Some examples are immutable variables by default, associated functions, patterns, macros, and references. You can find all the interesting things in the [Syntax and Semantics Chapter of the rust book](https://doc.rust-lang.org/book/syntax-and-semantics.html).
+
+The getting started docs are well written and multi-platform friendly–something that is often neglected.
+
+Resources:
+- [Getting Started, “The Book"](https://doc.rust-lang.org/book/getting-started.html)
+- [Pluralsight Rust Fundamentals](https://app.pluralsight.com/library/courses/rust-fundamentals/table-of-contents)
+- [Rust Playground](http://play.integer32.com/)
+
