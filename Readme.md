@@ -25,7 +25,7 @@ Contents:
 - [Day 16: Matter.js](#day16)
 - [Day 17: Brunch.io](#day17)
 - [Day 18: The basics of Phaser](#day18)
-- [Day 19: The basics of Phaser](#day18)
+- [Day 19: Rust Lang](#day19)
 
 ___
 
