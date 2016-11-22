@@ -8,7 +8,7 @@ fn main() {
     println!("Hello, Rusty Cargo!");
 
     let secret_number = rand::thread_rng().gen_range(1,101);
-    println!("Secret is {}", secret_number);
+    // println!("Secret is {}", secret_number);
 
     // Infinitely loop the user input guess, until the User wins.
     loop {
@@ -19,8 +19,10 @@ fn main() {
             .expect("Failed to read line");
 
         // convert input guess to u32 for comparison.
-        let guess: u32 = guess.trim().parse()
-            .expect("Enter a number!");
+        let guess: u32 = match guess.trim().parse() {
+                Ok(num) => num,
+                Err(_) => continue,
+        };
 
         println!("you guessed: {}", guess);
 
