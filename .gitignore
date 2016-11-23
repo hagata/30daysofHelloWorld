@@ -10,5 +10,10 @@ Day-10-React-Native/Todo/ios/
 .next/
 .Rproj.user
 
+
 # Ignore Rust Cargo project output directory
 target
+
+# elm stuff
+elm-stuff/
+
