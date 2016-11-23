@@ -26,6 +26,7 @@ Contents:
 - [Day 17: Brunch.io](#day17)
 - [Day 18: The basics of Phaser](#day18)
 - [Day 19: Rust Lang](#day19)
+- [Day 20: Elm Lang](#day20)
 
 ___
 
@@ -339,3 +340,23 @@ Resources:
 - [Pluralsight Rust Fundamentals](https://app.pluralsight.com/library/courses/rust-fundamentals/table-of-contents)
 - [Rust Playground](http://play.integer32.com/)
 
+#<a name="day20"></a> Day 20: Elm Lang
+
+🤔 Elm compiles down to Javascript, but it's much more than just a different way of writing JS. Unlike Coffee Script orTypescript which are both just javascript, Elm is a functional programming language of its own.
+
+Elm is pretty enjoyable to work with after you get through all of the learning curves. All the benchmarks show the benefits of performance and the other benefits Elm provides like "no runtime exceptions" are other reasons to choose Elm. It seems that some are having good luck using Elm with Elixer or Pheonix to build apps. [More info here](http://blog.carbonfive.com/2016/04/19/elixir-and-phoenix-the-future-of-web-apis-and-apps/)
+
+## Learning Curves
+
+When building web apps, Elm brings HTML and CSS into the Elm script. The HTML syntax in Elm is essentially swapping `<>` to `[]` brackets with extra confusion—I’m still not used to writing this way, it's different than anything else I've ever seen thus far.
+
+I don’t know how much it’s used, but my experience with the `elm—repl` was that it is moderately slow. It also seems to rely on an internet connection which resulted in some issues when on poor (train) internet.
+
+Some concepts are quite removed from my front-end dev expertise. Things like `foldp` folds, and Elm's Subs and commands structure are over my head; it may be the same for other front-end focused developers.
+
+Resources:
+- [Elm guide](https://guide.elm-lang.org/)
+- [Elm Tutorial: SPA](https://www.elm-tutorial.org/en/)
+- [Brandon Richey’s Elm Tutorial. Pt -1 (slightly outdated)](https://medium.com/p/11d7a53b1a78)
+- [Brandon Richey’s Elm Tutorial. Pt -2](https://medium.com/p/7932781396ef)
+- [Brandon Richey’s Elm Tutorial. Pt -3](https://medium.com/p/e1c649bd0d96)
