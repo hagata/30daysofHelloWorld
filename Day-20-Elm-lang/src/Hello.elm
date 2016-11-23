@@ -1,10 +1,21 @@
 module Greeting exposing (..)
-import Html exposing (text, Html)
+import Html exposing (..)
 
-view : String -> Html a
-view person =
-    text ("Hello, " ++ person)
-
+-- Main
 main : Html a
 main =
- view "Elm World"
+ view model
+
+-- Model
+model : String
+model =
+    "Elm World"
+
+-- View
+view : String -> Html a
+view person =
+    div []
+        [ h2 [] [ text ("List for: " ++ person) ]
+        , input [] []
+        , button [] [text "Add Something"]
+        ]
