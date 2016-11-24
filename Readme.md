@@ -27,6 +27,7 @@ Contents:
 - [Day 18: The basics of Phaser](#day18)
 - [Day 19: Rust Lang](#day19)
 - [Day 20: Elm Lang](#day20)
+- [Day 21: ErLang](#day21)
 
 ___
 
@@ -360,3 +361,18 @@ Resources:
 - [Brandon Richey’s Elm Tutorial. Pt -1 (slightly outdated)](https://medium.com/p/11d7a53b1a78)
 - [Brandon Richey’s Elm Tutorial. Pt -2](https://medium.com/p/7932781396ef)
 - [Brandon Richey’s Elm Tutorial. Pt -3](https://medium.com/p/e1c649bd0d96)
+
+#<a name="day21"></a> Day 21: Er…Lang
+Erlang is (another) functional programming language. It advertises speed and scalability, especially where multi-cpu computing is concerned. Apparently, Erlang is used mostly in telecom (companies like T-mobile, Motorola, and Ericsson use it) but is also used in other instances where scalability and concurrency need to be top tier.
+
+Working on a small, hello world application with Erlang has been challenging. Mostly because the resources out there are aimed at truly learning the language and not just building something with minimal understanding. That being said, going through the “Learn you some Erlang” tutorial, I’ve found writing Erlang to be very friendly. Friendly like Python (kinda). Some of the syntax is weird and I could do without, but it’s easy. I’ve noticed a number of concepts That were new to me when studying R-lang to be much better explained in different Erlang docs—like Guards!
+
+## Learning Curves
+Being that I built the least out of all of the previous 20 different frameworks and languages; I’d say the largest factor for learning Erlang is time. Everything that was presented to me in both starter guides, The official one and the one on _Learn You Some Erlang_ was clear and understandable. Time is a factor only because the syntax is unique and there are a lot of “new” things to learn before you can get started building “projects"
+
+Some of the unique characteristics to Erlang are the `.` full stops. Don’t forget to use the full stop `.` after expressions, or they will continue indefinitely (more or less) until they’re stopped—this one that I continue to forget. Additionally, 
+there is no native String type so working with and manipulating string can be cumbersome and apparently is one of the biggest critiques of Erlang. Finally, the different comparison operators. What you may be used to as `== !=` is `=:= =/=` in Erlang
+
+Resources:
+- [Erlang official site](http://erlang.org/doc/getting_started/intro.html)
+- [Learn You Some Erlang](http://learnyousomeerlang.com/introduction#what-is-erlang)
