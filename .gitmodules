@@ -4,3 +4,6 @@
 [submodule "Day-11-Ember-explorer/explorer"]
 	path = Day-11-Ember-explorer/explorer
 	url = https://github.com/hagata/ember-explorer.git
+[submodule "Day-22-Ionic/maf-calc"]
+	path = Day-22-Ionic/maf-calc
+	url = https://github.com/hagata/mafcalc.git
