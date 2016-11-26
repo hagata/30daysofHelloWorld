@@ -28,6 +28,7 @@ Contents:
 - [Day 19: Rust Lang](#day19)
 - [Day 20: Elm Lang](#day20)
 - [Day 21: ErLang](#day21)
+- [Day 22: Ionic](#day22)
 
 ___
 
@@ -238,7 +239,7 @@ Resources:
 
 
 #<a name="day14"></a> Day 14: Attempt at understanding Haskell!
-Haskell is an interesting programming language. For a front-end web focused developer who spends most of the time in dynamically typed languages like Javascript and Python, Haskell is full of fun, new concepts. 
+Haskell is an interesting programming language. For a front-end web focused developer who spends most of the time in dynamically typed languages like Javascript and Python, Haskell is full of fun, new concepts.
 
 Among some of the more interesting of features in Haskell are the function definition syntax and emphasis on recursion. There are no `For` loops in Haskell and all _loops_ are called through recursive function calls.
 
@@ -307,12 +308,12 @@ Resources:
 
 #<a name="day18"></a> Day 18: The basics of Phaser
 
-Phaser is more than just a physics engine; it’s an entire HTML game platform. It has _all_ the things you need to build a game, including a robust physics engine, audio, 2D & 3D, Camera controls, text, animation input handlers, and a lot more.    
+Phaser is more than just a physics engine; it’s an entire HTML game platform. It has _all_ the things you need to build a game, including a robust physics engine, audio, 2D & 3D, Camera controls, text, animation input handlers, and a lot more.
 
 Method and property names of the Phaser API are named in plain English; which makes working with Phaser easy to pick up. There is a lot to explore within Phaser, and the game possibilities seem endless. The example gallery of games built on Phaser is quite impressive. I feel that it truly is a gaming platform that can build production-ready HTML based games.
 
 ## Learning Curves
-Getting started is easy enough, and the learning resources seem quite vast. There wasn’t any trouble in getting going to build my first game. The only learning curve is time to understand the capabilities and best practices. Making a fully considered game will take time learning the extent of what Phaser has to offer. 
+Getting started is easy enough, and the learning resources seem quite vast. There wasn’t any trouble in getting going to build my first game. The only learning curve is time to understand the capabilities and best practices. Making a fully considered game will take time learning the extent of what Phaser has to offer.
 
 Resources:
 - [Phaser Sandbox](https://phaser.io/sandbox/edit/3)
@@ -370,9 +371,29 @@ Working on a small, hello world application with Erlang has been challenging. Mo
 ## Learning Curves
 Being that I built the least out of all of the previous 20 different frameworks and languages; I’d say the largest factor for learning Erlang is time. Everything that was presented to me in both starter guides, The official one and the one on _Learn You Some Erlang_ was clear and understandable. Time is a factor only because the syntax is unique and there are a lot of “new” things to learn before you can get started building “projects"
 
-Some of the unique characteristics to Erlang are the `.` full stops. Don’t forget to use the full stop `.` after expressions, or they will continue indefinitely (more or less) until they’re stopped—this one that I continue to forget. Additionally, 
+Some of the unique characteristics to Erlang are the `.` full stops. Don’t forget to use the full stop `.` after expressions, or they will continue indefinitely (more or less) until they’re stopped—this one that I continue to forget. Additionally,
 there is no native String type so working with and manipulating string can be cumbersome and apparently is one of the biggest critiques of Erlang. Finally, the different comparison operators. What you may be used to as `== !=` is `=:= =/=` in Erlang
 
 Resources:
 - [Erlang official site](http://erlang.org/doc/getting_started/intro.html)
 - [Learn You Some Erlang](http://learnyousomeerlang.com/introduction#what-is-erlang)
+
+#<a name="day22"></a> Day 22: Ionic (featuring A2 & TS)
+Ionic is a framework for building native applications with HTML, CSS, and Javascript. Ionic uses the power of Cordova to help build the native apps. Native does not just mean iOS and Android. Ionic has many other platforms you can compile to, including OSX, Windows, web, and more.
+
+Ionic pairs with Angular. You can choose Angular 1.5 or 2. Ionic itself is a  library of pre-styled components for native environments—it reminds me of components in Xcode. Ionic Components are essentially HTML-components that work across multiple platforms.
+
+## The Ionic Creator.
+You don’t need to use the creator to use Ionic. If you do, you will get some very quick shortcuts to design and export a base application UI. Creator feels very similar to using a simplified version of Xcode combined with Sketch—it’s not an IDE. Which is to say, it is convenient and comfortable. It also means that you’re only setting up the basic view and app page flow. Any dynamic content or functions will eventually be written outside of the Ionic Creator. I didn't test Creator PRO which looks to give more options as far as code editing within Creator.
+
+Unfortunately, Ionic Creator (at this time) doesn’t support exporting for Ionic2 which uses Angular 2. Ionic 1.* with Angular 1.5 is stable and is what the Pluralsight tutorial is based around, so there isn’t an issue there. Just preference.
+
+## Learning Curves
+You will need to know or be familiar with Angular (for Ionic 2, you need Angular 2 and TypeScript) to get started working with Ionic. Aside from that, there isn't much that is too difficult to pick up. The Ionic CLI has a lot of commands that you may or may not need to know, but they are well documented and easy to figure out.
+
+Ionic components are HTML web components and have some special parameters that control layout that you will need to become familiar with. Again, this is documented well in the official docs.
+
+Resources:
+- [Official Getting started](https://ionicframework.com/getting-started/)
+- [Pluralsight Ionic Framework (slightly dated, still good)](https://app.pluralsight.com/library/courses/ionic-framework-tools-patterns/table-of-contents)
+- [Building A2, Ionic2 app tutorial](http://gonehybrid.com/build-your-first-mobile-app-with-ionic-2-angular-2-part-5/)
