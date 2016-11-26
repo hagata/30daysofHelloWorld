@@ -4,6 +4,7 @@
 [submodule "Day-11-Ember-explorer/explorer"]
 	path = Day-11-Ember-explorer/explorer
 	url = https://github.com/hagata/ember-explorer.git
-[submodule "Day-22-Ionic/github-repo-finder"]
-	path = Day-22-Ionic/github-repo-finder
+
+[submodule "ionic-test-gh-repo-finder"]
+	path = ionic-test-gh-repo-finder
 	url = https://github.com/hagata/ionic-test-gh-repo-finder.git
