@@ -29,6 +29,7 @@ Contents:
 - [Day 20: Elm Lang](#day20)
 - [Day 21: ErLang](#day21)
 - [Day 22: Ionic](#day22)
+- [Day 23: Meteor](#day23)
 
 ___
 
@@ -397,3 +398,17 @@ Resources:
 - [Official Getting started](https://ionicframework.com/getting-started/)
 - [Pluralsight Ionic Framework (slightly dated, still good)](https://app.pluralsight.com/library/courses/ionic-framework-tools-patterns/table-of-contents)
 - [Building A2, Ionic2 app tutorial](http://gonehybrid.com/build-your-first-mobile-app-with-ionic-2-angular-2-part-5/)
+
+#<a name="day23"></a> Day 23: Meteor
+
+Meteor is an excellent platform for building the web and native apps. Like Ionic, it leverages the power of Cordova to compile native apps. There are some similarities to Ionic, but Meteor is unique in that it is a fully considered application developing platform. Meteor ships with all the packages you need to work with a database (Mongo) and add user authentication, test your app; both of which are essentially for most apps.
+
+I spent a little time with Meteor in the past, but since there have been major updates in the last couple of years, I thought I’d give it another try. I remember Meteor to be developer friendly and set up in a flexible way, and both of those still hold true. Meteor is flexible on many levels and can be used in conjunction with other frameworks—typically seen with Angular or React.
+
+## Learning curves
+Meteor keeps a lot under the hood and developers will have to determine which modules should be imported when–much like any platform. Based on one's preference, developers will have to either pick up a tempting framework like Angular or learn Meteor’s templating structure, Blaze. Learning Blaze is easy, and its syntax is much like handlebars.
+
+Overall, the official guides and tutorials on Meteor.com are sufficient in teaching how to work with and get started with all of the technologies within Meteor. Time to get up and running with a functioning app or prototype is very quick–especially if you have a Javascript background.
+
+Resources
+- [Official guides](https://www.meteor.com/)
