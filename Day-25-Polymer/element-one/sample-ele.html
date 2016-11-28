@@ -1,0 +1,40 @@
+<link rel="import" href="../polymer/polymer.html">
+
+<!--
+`sample-ele`
+testing the polymer CLI element
+
+@demo demo/index.html 
+-->
+
+<dom-module id="sample-ele">
+  <template>
+    <style>
+      :host {
+        display: block;
+        outline: 1px dashed tomato;
+      }
+    </style>
+    <h2>Hello [[prop1]]</h2>
+    <ul>
+      <li>This is a list item 1</li>
+      <li>This is a list item 2</li>
+      <li>This is a list item 3</li>
+    </ul>
+  </template>
+
+  <script>
+    Polymer({
+
+      is: 'sample-ele',
+
+      properties: {
+        prop1: {
+          type: String,
+          value: 'sample-ele',
+        },
+      },
+
+    });
+  </script>
+</dom-module>
