@@ -1,27 +1,74 @@
 <link rel="import" href="../polymer/polymer.html">
 <link rel="import" href="../paper-button/paper-button.html">
-
 <!--
 `editble-list`
 An list (possibly for setting/config) that can be edited and then saved with a toggle of &#34;edit&#34; and &#34;save&#34; buttons.
 
-@demo demo/index.html 
+@demo demo/index.html
 -->
-
 <dom-module id="editble-list">
   <template>
     <style>
-      :host {
-        display: flex;
+       :host {
+        display: block;
       }
+
       paper-button {
         background: cornflowerblue;
+        color: white;
+        font-size: 1.1rem;
+        font-weight: lighter;
       }
-    </style>
-    <h2>Hello [[prop1]]</h2>
-    <paper-button id="toggler">Flat button</paper-button>
-  </template>
 
+      .edit-list {
+        color: #505765;
+        list-style: none;
+        padding: 0;
+      }
+
+      .edit-list__item {
+        margin: .75rem 0;
+      }
+
+      .editble--editing {
+        background: none;
+        border: none;
+        color: cornflowerblue;
+      }
+
+      .editble--editing:focus {
+        border-bottom: 1px solid #448aff;
+        box-shadow: 0 1px 0 0 #448aff;
+        outline: none;
+      }
+
+      .editable-input {
+        box-sizing: content-box;
+        padding: .25rem;
+        width: 100%;
+        border-bottom: .1px solid transparent;
+        transition: border-bottom .12s ease-in-out;
+      }
+
+        .editable-input:disabled {
+          background: none;
+          border: none;
+          border-bottom: .1px solid transparent;
+          color: darkgray;
+        }
+
+    </style>
+    <h2>[[listTitle]]</h2>
+    <ul id="editList" class="edit-list">
+      <li class="editable edit-list__item">
+        <input type="text" class="editable-input" value="ONE" disabled/>
+      </li>
+      <li class="editable edit-list__item">
+        <input type="text" class="editable-input" value="TWO" disabled/>
+      </li>
+    </ul>
+    <paper-button id="toggler">[[buttonText]]</paper-button>
+  </template>
   <script>
     Polymer({
 
@@ -30,7 +77,13 @@ An list (possibly for setting/config) that can be edited and then saved with a t
       properties: {
         buttonText: {
           type: String,
-          value: 'Button!'
+          value: 'EDIT',
+          notify: true
+        },
+        editState: {
+          type: Boolean,
+          value: false,
+          notify: true
         }
       },
 
@@ -39,8 +92,15 @@ An list (possibly for setting/config) that can be edited and then saved with a t
       },
 
       toggleState: function(e) {
-        this.buttonText = "clicked!"
-        console.log('clicked toggle state')
+
+        this.buttonText = this.editState === true ? "EDIT" : "SAVE";
+        this.editState = !this.editState;
+        const editableInputs = this.$.editList.querySelectorAll('.editable-input');
+
+        for (const ele of editableInputs) {
+            ele.classList.toggle('editble--editing')
+            ele.disabled ? ele.disabled = false : ele.disabled = true;
+        }
       }
 
     });
