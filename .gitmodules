@@ -7,6 +7,3 @@
 [submodule "Day-22-Ionic/github-repo-finder"]
 	path = Day-22-Ionic/github-repo-finder
 	url = https://github.com/hagata/ionic-test-gh-repo-finder.git
-[submodule "Day-24-Messenger/quake-notify"]
-	path = Day-24-Messenger/quake-notify
-	url = https://github.com/hagata/quake-notify-messenger.git
