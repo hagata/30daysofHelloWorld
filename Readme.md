@@ -414,7 +414,8 @@ Overall, the official guides and tutorials on Meteor.com are sufficient in teach
 Resources
 - [Official guides](https://www.meteor.com/)
 
-#<a name="day24></a> Day 24: Messenger App [Bot]
+
+#<a name="day24"></a> Day 24: Messenger App [Bot]
 
 When I was working with API.AI last month, I discovered how simple it was to integrate with Messenger through the API.AI interface and connect it to a Natural Language Processing bot. Since then, I’ve wanted to work with messenger and discover what it’s like to develop for.
 
