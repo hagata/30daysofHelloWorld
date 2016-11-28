@@ -1,0 +1,48 @@
+<link rel="import" href="../polymer/polymer.html">
+<link rel="import" href="../paper-button/paper-button.html">
+
+<!--
+`editble-list`
+An list (possibly for setting/config) that can be edited and then saved with a toggle of &#34;edit&#34; and &#34;save&#34; buttons.
+
+@demo demo/index.html 
+-->
+
+<dom-module id="editble-list">
+  <template>
+    <style>
+      :host {
+        display: flex;
+      }
+      paper-button {
+        background: cornflowerblue;
+      }
+    </style>
+    <h2>Hello [[prop1]]</h2>
+    <paper-button id="toggler">Flat button</paper-button>
+  </template>
+
+  <script>
+    Polymer({
+
+      is: 'editble-list',
+
+      properties: {
+        buttonText: {
+          type: String,
+          value: 'Button!'
+        }
+      },
+
+      listeners: {
+        'toggler.tap': 'toggleState'
+      },
+
+      toggleState: function(e) {
+        this.buttonText = "clicked!"
+        console.log('clicked toggle state')
+      }
+
+    });
+  </script>
+</dom-module>

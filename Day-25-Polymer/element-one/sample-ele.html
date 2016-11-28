@@ -1,10 +1,11 @@
 <link rel="import" href="../polymer/polymer.html">
+<link rel="import" href="../paper-button/paper-button.html">
 
 <!--
 `sample-ele`
 testing the polymer CLI element
 
-@demo demo/index.html 
+@demo demo/index.html
 -->
 
 <dom-module id="sample-ele">
@@ -12,20 +13,20 @@ testing the polymer CLI element
     <style>
       :host {
         display: block;
-        outline: 1px dashed tomato;
+      }
+      paper-button {
+        background: cornflowerblue;
+        color: white;
+        font-size: 1.1rem;
       }
     </style>
+
     <h2>Hello [[prop1]]</h2>
-    <ul>
-      <li>This is a list item 1</li>
-      <li>This is a list item 2</li>
-      <li>This is a list item 3</li>
-    </ul>
+    <paper-button raised>[[buttonText]]</paper-button>
   </template>
 
   <script>
     Polymer({
-
       is: 'sample-ele',
 
       properties: {
@@ -33,6 +34,10 @@ testing the polymer CLI element
           type: String,
           value: 'sample-ele',
         },
+        buttonText: {
+          type: String,
+          value: 'Button!'
+        }
       },
 
     });
