@@ -30,6 +30,7 @@ Contents:
 - [Day 21: ErLang](#day21)
 - [Day 22: Ionic](#day22)
 - [Day 23: Meteor](#day23)
+- [Day 24: Messenger bot](#day24)
 
 ___
 
@@ -412,3 +413,19 @@ Overall, the official guides and tutorials on Meteor.com are sufficient in teach
 
 Resources
 - [Official guides](https://www.meteor.com/)
+
+#<a name="day24></a> Day 24: Messenger App [Bot]
+
+When I was working with API.AI last month, I discovered how simple it was to integrate with Messenger through the API.AI interface and connect it to a Natural Language Processing bot. Since then, I’ve wanted to work with messenger and discover what it’s like to develop for.
+
+Once everything is setup, working with the Messenger API seems straightforward. I did spend most of my time getting the app functioning and deployed to Heroku; which meant I only had a chance to read through the API documentation. All features/methods in the API are well covered and include helpful examples.
+
+## Learning curves
+Facebook applications to me have always seemed to have a significant overhead of “app configuration” on the Facebook Developer side. Setting up tokens and pages, etc. If you’re not familiar with this, it can be a bit of a hassle. Additionally, I went the route of setting up a Heroku Node application for the Messenger webhooks; which took an additional amount of setup and overhead when developing.
+
+The toughest part is setting up the application in Facebook and deploying (or figuring out how to work locally, which I didn’t bother with) a functioning app. The official guide that I used as my single resource did cover everything well, but it does gloss over some minor details that expect the reader to be familiar with Facebook applications and having a functioning server somewhere.
+
+Resources:
+- [Messenger app quick start](https://developers.facebook.com/docs/messenger-platform/guides/quick-start)
+
+
