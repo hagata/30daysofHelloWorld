@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+  <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+  <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi"
+  />
+  <title>SW with maps</title>
+  <script src="/vendor.js"></script>
+  <script src="/app.js"></script>
+  <script>require('initialize');</script>
+  <style>
+    /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+
+    #map {
+      height: 100%;
+    }
+    /* Optional: Makes the sample page fill the window. */
+
+    html,
+    body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="map"></div>
+  <script>
+    if ('serviceWorker' in navigator) {
+        console.log('CLIENT: Registering SW…');
+      navigator.serviceWorker.register('sw.js').then(function() {
+        console.log('CLIENT: serviceWorker Registered! 🙌');
+      }, function() {
+        console.log('%cCLIENT: serviceWorker registration failed 😭', 'color:red;');
+      });
+    } else {
+      console.log('CLIENT: service worker is not supported.');
+    }
+  </script>
+
+  <script>
+      var map;
+      function initMap() {
+        map = new google.maps.Map(document.getElementById('map'), {
+          center: {lat: -34.397, lng: 150.644},
+          zoom: 8
+        });
+      }
+    </script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDW638_sROFK35fbuOwNgwI6urnQy_HZ1Y&callback=initMap" async
+    defer></script>
+</body>
+
+</html>
