@@ -8,25 +8,12 @@
   <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi"
   />
   <title>SW with maps</title>
+
+  <link href="global.css" rel="stylesheet">
+
   <script src="/vendor.js"></script>
   <script src="/app.js"></script>
   <script>require('initialize');</script>
-  <style>
-    /* Always set the map height explicitly to define the size of the div
-       * element that contains the map. */
-
-    #map {
-      height: 100%;
-    }
-    /* Optional: Makes the sample page fill the window. */
-
-    html,
-    body {
-      height: 100%;
-      margin: 0;
-      padding: 0;
-    }
-  </style>
 </head>
 
 <body>
@@ -40,7 +27,7 @@
         console.log('%cCLIENT: serviceWorker registration failed 😭', 'color:red;');
       });
     } else {
-      console.log('CLIENT: service worker is not supported.');
+      console.log('😔😔😔😔😔😔😔😔😔\nSADLY, service worker is not supported in this browser\n😔😔😔😔😔😔😔😔😔');
     }
   </script>
 
