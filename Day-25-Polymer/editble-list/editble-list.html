@@ -58,22 +58,39 @@ An list (possibly for setting/config) that can be edited and then saved with a t
         }
 
     </style>
-    <h2>[[listTitle]]</h2>
-    <ul id="editList" class="edit-list">
-      <li class="editable edit-list__item">
-        <input type="text" class="editable-input" value="ONE" disabled/>
-      </li>
-      <li class="editable edit-list__item">
-        <input type="text" class="editable-input" value="TWO" disabled/>
-      </li>
-    </ul>
+      <h2>[[listTitle]]</h2>
+      <ul id="editList" class="edit-list">
+        <content id="c" select="li"></content>
+      </ul>
     <paper-button id="toggler">[[buttonText]]</paper-button>
   </template>
   <script>
     Polymer({
-
       is: 'editble-list',
+      items: [],
 
+      /**
+      * Transforms the incoming content to the format we Need.
+      */
+      ready: function() {
+        console.log('this', this.$.c._distributedNodes)
+        var distributed = this.getContentChildren('#c');
+        this.items = this.$.c._distributedNodes;
+
+        for (const item of this.items) {
+          console.log('inside loop with item', item)
+          //render an input with values
+          const value = item.textContent;
+
+          // Need to handle the classes and styling better. This is ugly.
+          const innerContent = `<input type="text" class="editable-input style-scope editble-list" value="${value}" disabled/>`
+          item.innerHTML = innerContent;
+          item.classList.add('editable')
+          item.classList.add('edit-list__item')
+          item.classList.add('style-scope')
+          item.classList.add('editble-list')
+        };
+      },
       properties: {
         buttonText: {
           type: String,
