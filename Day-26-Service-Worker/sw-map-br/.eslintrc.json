@@ -1,0 +1,9 @@
+{
+    "extends": "google",
+    "installedESLint": true,
+    "globals": {
+        "self": false,
+        "caches": false,
+        "fetch": false
+    }
+}

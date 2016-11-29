@@ -32,6 +32,7 @@ Contents:
 - [Day 23: Meteor](#day23)
 - [Day 24: Messenger bot](#day24)
 - [Day 25: Polymer](#day25)
+- [Day 26: Service Workers: offline first](#day26)
 
 ___
 
@@ -452,3 +453,22 @@ Resources:
 - [Pluralsight Working with Polymer.js Elements](https://app.pluralsight.com/library/courses/polymer-js-elements-working/table-of-contents)
 - [Polycast video series](https://www.youtube.com/watch?v=SkhCs-IDgS4&list=PLNYkxOF6rcIDdS7HWIC_BYRunV6MHs5xo)
 - [Polymer CLI readme](https://github.com/Polymer/polymer-cli)
+
+
+#<a name="day26"></a> Day 26: Service Workers, offline first.
+
+I’ve followed service workers since what feels like the first Google talk about them by Jake Archibald. Over the last year service worker support has been growing and so has my interest as well as interest in the industry.
+
+I Started with the bare minimum set up to get content to work offline and load under “lie-fi” using the new Cache API. Using the service worker’s so far has been easy and fun. Having content load while offline is nice! Especially when that is dynamic data from a third-party API like Google Maps. I Can’t wait to have support for both ServiceWorker and Cache on iOS.
+
+## Learning Curves
+If you’re already familiar with `fetch` and `localStorage`, you should have an easy time understanding `serviceWorker` and how to implement it. If not, then there will be a bit of overhead understanding how those work before diving into service workers.
+
+The API is easy to understand, and the documentation around the web is extensive.
+
+Resources:
+- [Google, Intro to service workers](https://developers.google.com/web/fundamentals/getting-started/primers/service-workers)
+- [Google, getting started with PWA](https://developers.google.com/web/updates/2015/12/getting-started-pwa)
+- [Offline Cookbook](https://jakearchibald.com/2014/offline-cookbook/)
+- [Using ServiceWorkers, MDN](https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API/Using_Service_Workers)
+- [Cache API, MDN](https://developer.mozilla.org/en-US/docs/Web/API/Cache)
