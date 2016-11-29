@@ -31,6 +31,7 @@ Contents:
 - [Day 22: Ionic](#day22)
 - [Day 23: Meteor](#day23)
 - [Day 24: Messenger bot](#day24)
+- [Day 25: Polymer](#day25)
 
 ___
 
@@ -430,3 +431,24 @@ Resources:
 - [Messenger app quick start](https://developers.facebook.com/docs/messenger-platform/guides/quick-start)
 
 
+#<a name="day25"></a> Day 25: Polymer Element
+
+Web components have been making a steady climb in popularity lately, and with the continued development and push of Polymer, it’s growing even quicker. I was excited to make custom web components with Polymer finally, and in doing so, I worked with the CLI’s boilerplates for Elements and Starter App’s.
+
+The Polymer CLI makes it quick to get started in an environment for writing and testing custom web components (and applications). I found that once I was familiar with the folder structure, I could work quickly. The CLI generates a bit of code for tests, documentation, and demos which are all helpful. For the most part, though, you can ignore all of them and focus on writing your component in a single file—for simple components at least.
+
+Working with Polymer was mostly pleasant and seems to be the standard these days for creating custom web components. I haven’t tried any of the other frameworks or even the bare minimum polyfills, but I probably just use Polymer on future projects.
+
+## Learning curves
+Polymer leverages HTML imports, which requires at least a basic understanding of how they work (easy). The Polymer CLI has some fancy routing with the `bower_components` that changes the path for importing dependencies which can be a bit confusing but is mostly a “set it and forget it” kind of thing.
+
+While I found the API friendly and mostly vanilla Javascript, some Polymer methods are tricky to understand in a short time. The documentation covers everything but can be a bit tough to comprehend in my opinion.
+
+Lastly, since Polymer has gone through some significant changes throughout its version and has had a big following, I found a lot of resources around the web to be out of date, or at least slightly out of date; this has been particularly true on StackOverflow.
+
+Resources:
+- [Webcomponents.org intro](http://webcomponents.org/articles/a-quick-polymer-introduction/)
+- [Polymer Docs](https://www.polymer-project.org/1.0/docs/tools/polymer-cli)
+- [Pluralsight Working with Polymer.js Elements](https://app.pluralsight.com/library/courses/polymer-js-elements-working/table-of-contents)
+- [Polycast video series](https://www.youtube.com/watch?v=SkhCs-IDgS4&list=PLNYkxOF6rcIDdS7HWIC_BYRunV6MHs5xo)
+- [Polymer CLI readme](https://github.com/Polymer/polymer-cli)

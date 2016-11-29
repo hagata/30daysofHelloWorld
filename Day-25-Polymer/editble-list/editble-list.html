@@ -1,0 +1,125 @@
+<link rel="import" href="../polymer/polymer.html">
+<link rel="import" href="../paper-button/paper-button.html">
+<!--
+`editble-list`
+An list (possibly for setting/config) that can be edited and then saved with a toggle of &#34;edit&#34; and &#34;save&#34; buttons.
+
+@demo demo/index.html
+-->
+<dom-module id="editble-list">
+  <template>
+    <style>
+       :host {
+        display: block;
+      }
+
+      paper-button {
+        background: cornflowerblue;
+        color: white;
+        font-size: 1.1rem;
+        font-weight: lighter;
+      }
+
+      .edit-list {
+        color: #505765;
+        list-style: none;
+        padding: 0;
+      }
+
+      .edit-list__item {
+        margin: .75rem 0;
+      }
+
+      .editble--editing {
+        background: none;
+        border: none;
+        color: cornflowerblue;
+      }
+
+      .editble--editing:focus {
+        border-bottom: 1px solid #448aff;
+        box-shadow: 0 1px 0 0 #448aff;
+        outline: none;
+      }
+
+      .editable-input {
+        box-sizing: content-box;
+        padding: .25rem;
+        width: 100%;
+        border-bottom: .1px solid transparent;
+        transition: border-bottom .12s ease-in-out;
+      }
+
+        .editable-input:disabled {
+          background: none;
+          border: none;
+          border-bottom: .1px solid transparent;
+          color: darkgray;
+        }
+
+    </style>
+      <h2>[[listTitle]]</h2>
+      <ul id="editList" class="edit-list">
+        <content id="c" select="li"></content>
+      </ul>
+    <paper-button id="toggler">[[buttonText]]</paper-button>
+  </template>
+  <script>
+    Polymer({
+      is: 'editble-list',
+      items: [],
+
+      /**
+      * Transforms the incoming content to the format we Need.
+      */
+      ready: function() {
+        console.log('this', this.$.c._distributedNodes)
+        var distributed = this.getContentChildren('#c');
+        this.items = this.$.c._distributedNodes;
+
+        for (const item of this.items) {
+          console.log('inside loop with item', item)
+          //render an input with values
+          const value = item.textContent;
+
+          // Need to handle the classes and styling better. This is ugly.
+          const innerContent = `<input type="text" class="editable-input style-scope editble-list" value="${value}" disabled/>`
+          item.innerHTML = innerContent;
+          item.classList.add('editable')
+          item.classList.add('edit-list__item')
+          item.classList.add('style-scope')
+          item.classList.add('editble-list')
+        };
+      },
+      properties: {
+        buttonText: {
+          type: String,
+          value: 'EDIT',
+          notify: true
+        },
+        editState: {
+          type: Boolean,
+          value: false,
+          notify: true
+        }
+      },
+
+      listeners: {
+        'toggler.tap': 'toggleState'
+      },
+
+      toggleState: function(e) {
+
+        this.buttonText = this.editState === true ? "EDIT" : "SAVE";
+        this.editState = !this.editState;
+        const editableInputs = this.$.editList.querySelectorAll('.editable-input');
+
+        for (const ele of editableInputs) {
+            ele.classList.toggle('editble--editing')
+            ele.disabled ? ele.disabled = false : ele.disabled = true;
+        }
+      }
+
+    });
+  </script>
+</dom-module>
