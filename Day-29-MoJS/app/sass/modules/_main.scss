@@ -1,0 +1,13 @@
+$soft-blue-gray: #D3D3DA;
+
+body {
+  background-image: linear-gradient( 0deg, #fafafa 20%, $soft-blue-gray 92% );
+  // background: $soft-blue-gray;
+}
+
+.stage {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
