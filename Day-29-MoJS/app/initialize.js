@@ -1,4 +1,5 @@
-// const mojs = require('mo-js');
+'use strict';
+
 import mojs from 'mo-js';
 import MojsPlayer from 'mojs-player';
 
@@ -71,10 +72,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
   console.log(rearGrassGroup);
 
-  let frontTimeline = new mojs.Timeline({
-  }).add(...frontRockGroup, ...frontStonesGroup, ...frontGrassGroup);
+  let frontTimeline = new mojs.Timeline()
+    .add(...frontRockGroup, ...frontStonesGroup, ...frontGrassGroup);
 
-  let rearTimeline = new mojs.Timeline().add(...rearGrassGroup);
+  let rearTimeline = new mojs.Timeline()
+    .add(...rearGrassGroup);
 
   let mainTimeline = new mojs.Timeline()
     .add(frontTimeline, rearTimeline)
@@ -87,6 +89,15 @@ document.addEventListener('DOMContentLoaded', () => {
   console.log('Initialized app');
 });
 
+/**
+* Creates an Array of a single type of shape.
+*
+* @param {String} moShape the name of the shape that will be created.
+* @param {Int} num The number of shapes you want added to the array
+* @param {Object} shapeSettings An object of shape settings to be applied to each new shape.
+*
+* @returns {Array}
+*/
 function createRandomObjectArray(moShape, num, shapeSettings) {
     const shapeArray = [];
 
