@@ -33,6 +33,7 @@ Contents:
 - [Day 24: Messenger bot](#day24)
 - [Day 25: Polymer](#day25)
 - [Day 26: Service Workers: offline first](#day26)
+- [Day 27: Swift3](#day27)
 
 ___
 
@@ -472,3 +473,20 @@ Resources:
 - [Offline Cookbook](https://jakearchibald.com/2014/offline-cookbook/)
 - [Using ServiceWorkers, MDN](https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API/Using_Service_Workers)
 - [Cache API, MDN](https://developer.mozilla.org/en-US/docs/Web/API/Cache)
+
+#<a name="day27"></a> Day 27: Swift 3
+
+Back when Swift was first announced, I jumped on it to build iOS and WatchOS apps no longer needing Objective C. Since then, I haven’t touched Swift and it has transformed into what is now version 3, so I thought it was time to pick it up again. 
+
+Having a REPL built into OS X is very handy. Unfortunately, I don’t know what the setup process for running Swift on Windows is (maybe using the Linux versions?). Even though the playground and the REPL are perfect for writing and testing code snippets, most of the development is done in Xcode for apps and a lot of this can be a little “drag and drop-y”. This takes a bit away from learning Swift.  I ended up brushing up on Swift syntax in Playgrounds the most.
+
+## Learning curves
+Getting Xcode up and running with the necessary profiles can be a headache if you don’t already have it set up, especially when it comes to building and running apps. Luckily, once it’s working, you can begin testing Swift code in Playgrounds within Xcode. 
+
+As for actually writing Swift (not dealing with the Xcode interface), if you come from Javascript or Python I think you’ll find the syntax to be familiar and friendly. Swift is a very heavily supported language. The resources for learning are vast including videos, courses, tutorials, examples,  official documentation; it's all widely available from many sources. Because of the support and resources, it's probably one of the easiest modern languages to learn.
+
+Resources:
+- [Swift REPL](https://swift.org/getting-started/#using-the-repl)
+- [Swift Guided Tour](https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/GuidedTour.html)
+- [Mapbox iOS SKD first steps](https://www.mapbox.com/help/first-steps-ios-sdk/)
+- [Jared Davidson: Custom Table View Cells](https://www.youtube.com/watch?v=zAWO9rldyUE)
