@@ -10,6 +10,7 @@ module.exports = {
   },
 
   plugins: {
+    sass: {mode: 'native'},
     babel: {presets: ['es2015']}
   }
 };
