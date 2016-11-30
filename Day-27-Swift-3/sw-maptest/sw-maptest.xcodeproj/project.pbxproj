@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7614165F1DEE6CD800EA76CD /* tableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F7670D1DEE5CAF00F2D169 /* tableViewController.swift */; };
+		761416661DEE88EE00EA76CD /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761416641DEE88EE00EA76CD /* TableViewCell.swift */; };
+		761416671DEE88EE00EA76CD /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 761416651DEE88EE00EA76CD /* TableViewCell.xib */; };
 		C3F766901DEE2A2F00F2D169 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F7668F1DEE2A2F00F2D169 /* AppDelegate.swift */; };
 		C3F766921DEE2A2F00F2D169 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F766911DEE2A2F00F2D169 /* FirstViewController.swift */; };
 		C3F766941DEE2A2F00F2D169 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F766931DEE2A2F00F2D169 /* SecondViewController.swift */; };
@@ -19,8 +22,6 @@
 		C3F767081DEE34C100F2D169 /* Mapbox.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C3F767061DEE34C100F2D169 /* Mapbox.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C3F7670B1DEE489500F2D169 /* Map.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F7670A1DEE489500F2D169 /* Map.swift */; };
 		C3F7670C1DEE489500F2D169 /* Map.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F7670A1DEE489500F2D169 /* Map.swift */; };
-		C3F7670E1DEE5CAF00F2D169 /* tableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F7670D1DEE5CAF00F2D169 /* tableViewController.swift */; };
-		C3F7670F1DEE5CAF00F2D169 /* tableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F7670D1DEE5CAF00F2D169 /* tableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		761416641DEE88EE00EA76CD /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TableViewCell.swift; path = ../TableViewCell.swift; sourceTree = "<group>"; };
+		761416651DEE88EE00EA76CD /* TableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TableViewCell.xib; path = ../TableViewCell.xib; sourceTree = "<group>"; };
 		C3F7668C1DEE2A2F00F2D169 /* sw-maptest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "sw-maptest.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3F7668F1DEE2A2F00F2D169 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C3F766911DEE2A2F00F2D169 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -131,6 +134,8 @@
 				C3F766931DEE2A2F00F2D169 /* SecondViewController.swift */,
 				C3F766951DEE2A2F00F2D169 /* Main.storyboard */,
 				C3F7670A1DEE489500F2D169 /* Map.swift */,
+				761416641DEE88EE00EA76CD /* TableViewCell.swift */,
+				761416651DEE88EE00EA76CD /* TableViewCell.xib */,
 				C3F7670D1DEE5CAF00F2D169 /* tableViewController.swift */,
 				C3F766981DEE2A2F00F2D169 /* Assets.xcassets */,
 				C3F7669A1DEE2A2F00F2D169 /* LaunchScreen.storyboard */,
@@ -277,6 +282,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C3F7669C1DEE2A2F00F2D169 /* LaunchScreen.storyboard in Resources */,
+				761416671DEE88EE00EA76CD /* TableViewCell.xib in Resources */,
 				C3F766991DEE2A2F00F2D169 /* Assets.xcassets in Resources */,
 				C3F766971DEE2A2F00F2D169 /* Main.storyboard in Resources */,
 			);
@@ -306,8 +312,9 @@
 				C3F766941DEE2A2F00F2D169 /* SecondViewController.swift in Sources */,
 				C3F766901DEE2A2F00F2D169 /* AppDelegate.swift in Sources */,
 				C3F7670B1DEE489500F2D169 /* Map.swift in Sources */,
+				761416661DEE88EE00EA76CD /* TableViewCell.swift in Sources */,
 				C3F766921DEE2A2F00F2D169 /* FirstViewController.swift in Sources */,
-				C3F7670E1DEE5CAF00F2D169 /* tableViewController.swift in Sources */,
+				7614165F1DEE6CD800EA76CD /* tableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -315,7 +322,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C3F7670F1DEE5CAF00F2D169 /* tableViewController.swift in Sources */,
 				C3F7670C1DEE489500F2D169 /* Map.swift in Sources */,
 				C3F766A71DEE2A2F00F2D169 /* sw_maptestTests.swift in Sources */,
 			);
@@ -570,6 +576,7 @@
 				C3F766B81DEE2A2F00F2D169 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C3F766B91DEE2A2F00F2D169 /* Build configuration list for PBXNativeTarget "sw-maptestTests" */ = {
 			isa = XCConfigurationList;
@@ -578,6 +585,7 @@
 				C3F766BB1DEE2A2F00F2D169 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C3F766BC1DEE2A2F00F2D169 /* Build configuration list for PBXNativeTarget "sw-maptestUITests" */ = {
 			isa = XCConfigurationList;
@@ -586,6 +594,7 @@
 				C3F766BE1DEE2A2F00F2D169 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
