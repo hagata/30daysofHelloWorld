@@ -35,6 +35,7 @@ Contents:
 - [Day 26: Service Workers: offline first](#day26)
 - [Day 27: Swift3](#day27)
 - [Day 28: Total JS](#day28)
+- [Day 29: Mo.js Animation](#day29)
 
 ___
 
@@ -509,3 +510,29 @@ For people used to Handlerbars/Jinja style templating, you’ll find the Total.j
 Resources:
 - [official get-started page](https://www.totaljs.com/get-started/)
 - [Examples on GitHub](https://github.com/totaljs/examples)
+
+#<a name="day29"></a> Day 29: Mo.js
+
+Mo.js is a new animation/motion framework for motion on the web. It works especially well with SVG animations as well as regular DOM animations and tweens. As someone who is a big Greensock (GSAP) fan, I found Mo.js to be just as awesome. 
+
+I haven’t done all the performance benchmarks or even really compared the two frameworks—I did get the CPU fans whirring on my 15" Macbook Pro. So far (after a few hours) Mo.js seems to provide a few different interfaces for animating things. 
+
+ Mo.js feels like its focus is more on shapes, and the API for creating custom shapes in Mo is very simple. By default, Mo.js ships with a few shape primitives like `circle`, `zigzag`, `polygon` and more. Adding custom SVG shapes is as simple as extending the `mojs.CustomShape` class.
+
+There are native tweens, as well as unique animation “primitives” like `burst` and `swirl`. Similar to Greensock, there is also the concept of Timelines to chain/group animations in sequence. I love Timelines in Greensock and am glad to see them here.
+
+Mo.js seems to provide more customizable easing curves by allowing developers to import an SVG Path to use as easing curves. There is even a great tool to build them. Also, while still young, the Mo.js Tool suite is well designed—I like it a lot. It currently consists of the Player and curve tool
+
+## Learning Curves
+If you’ve ever worked with animation frameworks, whether that’s Action Script in Flash, native CSS animations, Greensock, or even Framer, you will quickly adapt to Mo.js. If this is your first time, there is a little work to do to understand the concepts, but I’d rate them as beginner friendly.
+
+SVG knowledge is not required but is extremely helpful. At the minimum, developers will need to be familiar with how inline SVG’s are laid out in the DOM and how to select different parts, etc. to work with them in JS.
+
+Overall, Mo.js is easy to use and with only one dependency, getting started in CodePen is highly recommended.
+
+Resources:
+- [Sarah Drasner article no CSS Tricks](https://css-tricks.com/introduction-mo-js/)
+- [GitHub Repo](https://github.com/legomushroom/mojs)
+- [API docs](https://github.com/legomushroom/mojs/blob/master/api/readme.md)
+- [Official Tutorials](http://mojs.io/tutorials/shape/)
+- [Mo-js player tool](https://github.com/legomushroom/mojs-player)
