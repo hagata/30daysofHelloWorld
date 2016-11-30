@@ -1,0 +1,7 @@
+{
+    "extends": "google",
+    "installedESLint": true,
+    "globals": {
+        "document": false
+    }
+}

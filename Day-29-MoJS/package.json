@@ -23,6 +23,8 @@
     "brunch": "^2.4.0",
     "clean-css-brunch": "^2.0.0",
     "css-brunch": "^2.0.0",
+    "eslint": "^3.11.1",
+    "eslint-config-google": "^0.7.1",
     "javascript-brunch": "^2.0.0",
     "uglify-js-brunch": "^2.0.0"
   }
