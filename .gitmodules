@@ -10,3 +10,6 @@
 [submodule "Day-24-Messenger/quake-notify"]
 	path = Day-24-Messenger/quake-notify
 	url = https://github.com/hagata/quake-notify-messenger.git
+[submodule "Day-27-Swift-3/ios-mb-map"]
+	path = Day-27-Swift-3/ios-mb-map
+	url = https://github.com/hagata/ios-mb-map.git
