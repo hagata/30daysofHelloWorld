@@ -34,6 +34,7 @@ Contents:
 - [Day 25: Polymer](#day25)
 - [Day 26: Service Workers: offline first](#day26)
 - [Day 27: Swift3](#day27)
+- [Day 28: Total JS](#day28)
 
 ___
 
@@ -490,3 +491,21 @@ Resources:
 - [Swift Guided Tour](https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/GuidedTour.html)
 - [Mapbox iOS SKD first steps](https://www.mapbox.com/help/first-steps-ios-sdk/)
 - [Jared Davidson: Custom Table View Cells](https://www.youtube.com/watch?v=zAWO9rldyUE)
+
+
+#<a name="day28"></a> Day 28: Total.js Node Framework
+
+Total.js is a Node platform “similar to Python’s Django” or other app/website platforms that bundle up all the dependencies you *may* need–like a server, a database, routing, etc.
+
+After poking around a bit with the file structure and documentation, I was able to make sense of how things operated. I’m not sure if this project is being actively developed, but I feel like it’s “almost there”. The CLI is useful, like with other platforms, but again it’s “almost there.”
+
+From what I’ve seen in the examples and on the Total.js marketing site, it looks like Total.js can ship production ready products and is extensible—I just wasn’t quick able to get there in the short time I spent with it.
+
+## Learning Curves
+Total.js has its way of doing just about everything, which isn’t necessarily a bad thing. I did find the official documentation to be challenging to understand and unclear at times. Along the same lines, there is a lot of code tucked under the hood, which makes things a little difficult see how they work. For instance, I didn’t really know it supported Sass until I poked around the generated code and noticed a single `$color: #67B13D;` definition.
+
+For people used to Handlerbars/Jinja style templating, you’ll find the Total.js View-Engine to to be different, but not challenging.
+
+Resources:
+- [official get-started page](https://www.totaljs.com/get-started/)
+- [Examples on GitHub](https://github.com/totaljs/examples)
