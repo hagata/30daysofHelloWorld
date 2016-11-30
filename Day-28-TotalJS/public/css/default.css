@@ -1,5 +1,6 @@
 /*auto*/
 
+$base-color: #afafaf;
 $color: #67B13D;
 
 body {
@@ -7,32 +8,37 @@ body {
     margin:0;
     font:normal 14px Arial;
     color:#656D78;
-    background-color: #67B13D;
+    background-color: $base-color;
     line-height: 20px;
 }
 
 .container-background {
-    background-color:
-white; }
-.container { margin:0 auto;
-width: 960px;
-padding: 50px 0; }
+    background-color: $base-color;
+}
+
+.container {
+     margin:0 auto;
+    width: 960px;
+    padding: 50px 0;
+}
 
 .center {
      text-align: center;
 }
+
 hr {
     border: 0;
-border-top: 1px solid #E0E0E0;
+    border-top: 1px solid #E0E0E0;
 }
 
 .linkbutton {
     display: inline-block;
- position: relative;
-padding: 15px 80px;
-color: $color; border: 1px solid $color;
-text-decoration: none;
- border-radius: 4px;
+    position: relative;
+    padding: 15px 80px;
+    color: $color; 
+    border: 1px solid $color;
+    text-decoration: none;
+    border-radius: 4px;
  }
 
 .linkbutton:hover {
