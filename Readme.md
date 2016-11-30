@@ -33,7 +33,7 @@ Contents:
 - [Day 24: Messenger bot](#day24)
 - [Day 25: Polymer](#day25)
 - [Day 26: Service Workers: offline first](#day26)
-- [Day 26: Swift3](#day27)
+- [Day 27: Swift3](#day27)
 
 ___
 
