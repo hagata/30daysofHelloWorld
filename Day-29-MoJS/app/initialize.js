@@ -2,66 +2,10 @@
 import mojs from 'mo-js';
 import MojsPlayer from 'mojs-player';
 
+import getRandomInt from './scripts/utils/random';
 
 document.addEventListener('DOMContentLoaded', () => {
   const tweens = {}
-
-  // Shapes
-  const pos = {
-    row1: '35%',
-    row2: '65%',
-    col1: '20%',
-    col2: '40%',
-    col3: '60%',
-    col4: '80%'
-  };
-
-
-  // // tween on normal DOM elements
-  //
-  // let square = document.querySelector('#js-square');
-  // tweens.square = new mojs.Tween({
-  //   onUpdate: function (progress) {
-  //     square.style.transform = 'translateY(' + 200 * progress + 'px)';
-  //   }
-  // });
-
-  // const zigzag = new mojs.Shape({
-  //   shape: 'zigzag',
-  //   points: 7,
-  //   radius: 25,
-  //   radiusY: 50,
-  //   top: pos.row1,
-  //   left: pos.col1,
-  //   fill: 'none',
-  //   stroke: '#c159b0',
-  //   isShowStart: true,
-  // });
-
-
-  // now it is avaliable to use on mo.js Shape constructor
-  // const note_opts_one = {
-  //   shape: 'oneNote',
-  //   scale: { 7: 20 },
-  //   y: { 20: -10 },
-  //   duration: 2000,
-  //   easing: 'sin.out'
-  // };
-
-  // const note1 = new mojs.ShapeSwirl({
-  //   shape: 'oneNote',
-  //   scale: { 7: 20 },
-  //   y: { 20: -10 },
-  //   duration: 2000,
-  //   easing: 'sin.out',
-  //   fill: { 'cyan': 'red' },
-  //   swirlSize: 15,
-  //   swirlFrequency: 20
-  // }).then({
-  //   opacity: 0,
-  //   duration: 200,
-  //   easing: 'sin.in'
-  // });
 
 
   // Define Custom Shapes
@@ -83,55 +27,57 @@ document.addEventListener('DOMContentLoaded', () => {
   }
   mojs.addShape('grass', Grass)
 
-  let pace = 1;
-  let vanishingPoint = {x:-300, y: 20}
+  let pace = 2;
+  let vanishingPoint = {x:-800, y: -40}
 
+  // Set common properties.
   const slopeSettings = {
     x: {300: vanishingPoint.x},
-    y: {100: vanishingPoint.y},
-    scale: {1:0.2},
-    duration: 3000, // Calc duration based on pace and perspective parallax.
+    y: {180: vanishingPoint.y},
+    opacity: {1: 0.8}, // disappear into the distant fog.
+    scale: {1.5:0.35},
+    duration: 5000 * pace, // Calc duration based on pace and perspective parallax.
   }
 
-  console.log(slopeSettings)
-
-  const stones = new mojs.Shape({
+  const rearSlopeSettings = {
     ...slopeSettings,
-    shape: 'stones',
-    fill: '#acacac',
-    isShowStart: true,
-  })
+    x: {800: vanishingPoint.x + 200},
+    duration: 5000 * (pace * 1.5),
+    zIndex: -1,
+  }
 
-  const rock = new mojs.Shape({
-    shape: 'rock',
+
+  // Make lots of shapes. Get the CPU fans to spin!
+  const frontGrassGroup = createRandomObjectArray('grass', 10, {
+    ...slopeSettings,
+    fill: '#7cb342'
+  });
+
+  const frontRockGroup = createRandomObjectArray('rock', 12, {
+    ...slopeSettings,
     fill: {'#8d8d8d': '#8d8d8d'},
-    x: {300: -300},
-    y: {100: 20},
-    scale: {1.2:0.7},
-    duration: 3000,
-    isShowStart: true,
   })
 
-  const heart = new mojs.Shape({
-    shape: 'grass',
-    top: pos.row2,
-    // left: pos.col1,
-    // y: -60,
-    fill: '#c159b0',
-    isShowStart: true,
+  const frontStonesGroup = createRandomObjectArray('stones', 8, {
+      ...slopeSettings,
+      shape: 'stones',
+      fill: '#acacac',
   })
 
+  const rearGrassGroup = createRandomObjectArray('grass', 20, {
+    ...rearSlopeSettings,
+    fill: '#8ba274'
+  });
 
+  console.log(rearGrassGroup);
 
+  let frontTimeline = new mojs.Timeline({
+  }).add(...frontRockGroup, ...frontStonesGroup, ...frontGrassGroup);
 
-  let mainTimeline = new mojs.Timeline({
-    repeat: 10,
-    isYoyo: false
-  })
+  let rearTimeline = new mojs.Timeline().add(...rearGrassGroup);
 
-  mainTimeline
-    .add(rock)
-  // .play()
+  let mainTimeline = new mojs.Timeline()
+    .add(frontTimeline, rearTimeline)
 
 
   // Put everything into the Player.
@@ -140,3 +86,20 @@ document.addEventListener('DOMContentLoaded', () => {
   });
   console.log('Initialized app');
 });
+
+function createRandomObjectArray(moShape, num, shapeSettings) {
+    const shapeArray = [];
+
+    for (var i = 0; i <= num; i++) {
+    let randomNumber = getRandomInt(i, 100);
+    let shape = new mojs.Shape({
+      ...shapeSettings,
+      shape: moShape,
+      delay: 140 * randomNumber,
+    })
+
+    shapeArray.push(shape)
+  }
+
+  return shapeArray;
+}
