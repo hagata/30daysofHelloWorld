@@ -36,6 +36,7 @@ Contents:
 - [Day 27: Swift3](#day27)
 - [Day 28: Total JS](#day28)
 - [Day 29: Mo.js Animation](#day29)
+- [Day 30: MicroPython, Feather, Si7021](#day30)
 
 ___
 
@@ -536,3 +537,28 @@ Resources:
 - [API docs](https://github.com/legomushroom/mojs/blob/master/api/readme.md)
 - [Official Tutorials](http://mojs.io/tutorials/shape/)
 - [Mo-js player tool](https://github.com/legomushroom/mojs-player)
+
+#<a name="day30"></a> Day 30: MicroPython, Feather, Si7021.
+
+Since day 1 of this challenge, I’ve been excited to get back to working with microcontrollers, electronics, and sensors, specifically with Python—I’ve used Arduino in the past.
+
+It’s been a couple of years since I wrote my last Arduino code. I didn’t even have the IDE installed on my machine anymore. I was starting from scratch at developing for the Adafruit Feather; which wasn’t a bad thing at all. I had ordered myself the board, and a breakout board for the temperature and humidity sensor and got put everything together on the breadboard.
+
+I started with the basic setup tutorials (had to go through a lot), followed by getting LED lights to blink, then finally working with I2C sensors. It was a long process before getting to the “main project, ” but after only 4 hours, I had a working product.
+
+## Learning Curves
+Setting up the development environment on the board and your machine takes some time and a bit of reading. I found the best documentation split between the official MicroPython docs and the guides on Adafruit; both were paramount in my understanding and setup.
+
+The actual coding and writing of MicroPython is __just python!__ The only learning curve is the `machine` library; which is for setting up interaction with the board, pins, and I2C protocol, etc. I didn't explore any other libraries besides, `machine`, but learning them is very similar to becoming familiar with any third-party Python package.
+
+*Finding the command for finding the USB port was hard. it’s `ls /dev/tty.*` and so far I only found this command through watching a video.
+
+Resources:
+- [Adafruit Feather HUZZAH ESP8266](https://www.adafruit.com/product/2821)
+- [Adafruit Si7021 Temperature & Humidity Sensor Breakout Board](https://www.adafruit.com/product/3251)
+- [How to load Micropython on a board](https://learn.adafruit.com/micropython-basics-how-to-load-micropython-on-a-board/esp8266)
+- [How to load files: AMPY](https://learn.adafruit.com/micropython-basics-load-files-and-run-code)
+- [MicroPython I2C Devices Tutorial](https://learn.adafruit.com/micropython-hardware-i2c-devices/overview)
+- [Micropy Si7021 module](https://gist.github.com/minyk/7c3070bc1c2766633b8ff1d4d51089cf)
+- [Hexidecimal -> Decimal converter](http://www.binaryhexconverter.com/hex-to-decimal-converter)
+- [Micropython file system documentation](http://docs.micropython.org/en/v1.8.2/esp8266/esp8266/tutorial/filesystem.html)
