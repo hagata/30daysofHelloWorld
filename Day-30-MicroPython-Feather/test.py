@@ -1,6 +1,9 @@
 import time
 import machine
 
+from time import sleep_ms
+from machine import Pin, I2C
+
 # Set I2C (SCL "Clock Line", SDA "Data Line") pins
 i2c = machine.I2C(machine.Pin(5), machine.Pin(4))
 
@@ -12,7 +15,6 @@ i2c_address = i2c.scan()
     Thanks to @minyk
     https://gist.github.com/minyk/7c3070bc1c2766633b8ff1d4d51089cf
 """
-
 # Default Address
 SI7021_I2C_DEFAULT_ADDR = 0x40
 
@@ -57,4 +59,14 @@ class Si7021(object):
 
 
 
-print("running")
+DEVICE = Si7021()
+print("RUNNING!")
+
+#
+while True:
+    current_temp = DEVICE.readTemp()
+    current_humidity = DEVICE.readRH()
+
+    # temp: 23°C, humidity: 39%
+    print("temp: %d\xb0C, humidity: %d%%" % (current_temp, current_humidity))
+

@@ -1,4 +1,28 @@
+# Micropython project
+### Si7021 Tempature and Humidity Sensor with Feather Huzzah
+Basic implementation to read data from the Si7021 sensor. Many thanks to this Gist, [Micropy Si7021 module](https://gist.github.com/minyk/7c3070bc1c2766633b8ff1d4d51089cf), by minyk 🙌🙇
 
+Resources:
+- [Adafruit Feather HUZZAH ESP8266](https://www.adafruit.com/product/2821)
+- [Adafruit Si7021 Temperature & Humidity Sensor Breakout Board](https://www.adafruit.com/product/3251)
+- [How to load Micropython on a board](https://learn.adafruit.com/micropython-basics-how-to-load-micropython-on-a-board/esp8266)
+- [How to load files: AMPY](https://learn.adafruit.com/micropython-basics-load-files-and-run-code)
+- [MicroPython I2C Devices Tutorial](https://learn.adafruit.com/micropython-hardware-i2c-devices/overview)
+- [Hexidecimal -> Decimal converter](http://www.binaryhexconverter.com/hex-to-decimal-converter)
+- [Micropython file system documentation](http://docs.micropython.org/en/v1.8.2/esp8266/esp8266/tutorial/filesystem.html)
+
+
+Outputs the following to the `screen` REPL when running.
+```
+temp: 24°C, humidity: 36%
+temp: 24°C, humidity: 36%
+temp: 24°C, humidity: 37%
+temp: 24°C, humidity: 37%
+temp: 24°C, humidity: 36%
+temp: 24°C, humidity: 37%
+temp: 24°C, humidity: 37%
+temp: 24°C, humidity: 36%
+```
 ## Setup
 Things it took forever to find.
 
@@ -30,4 +54,20 @@ Install AMPY following the guide, [https://learn.adafruit.com/micropython-basics
 - Set the AMPY port variable as an environmental variable to avoid having to type it every time. Optionally, add this to .bashprofile/.zshrc etc.
     ```
     export AMPY_PORT=/dev/tty.SLAB_USBtoUART
+    ```
+
+### MicroPython file system
+In case you break something and Ampy doesn't work. Or, if you're interested in working with the file system from the REPL.
+On the REPL, `screen /dev/tty.SLAB_USBtoUART 115200`
+- first: import os
+    ```
+    import os
+    ```
+- list files
+    ```
+    os.listdir()
+    ```
+- Remove files (like the ones that are breaking things)
+    ```
+    os.remove('filename.py')
     ```
