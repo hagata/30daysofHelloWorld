@@ -1,8 +1,8 @@
+# Main entry point for the board. Runs on Boot.
 import machine
 import time
 
-print('Hello world! I can count:')
-i = 1
+print("Hello, Micropython!")
 
 # Set an Led pin on Pin 15
 led = machine.Pin(15, machine.Pin.OUT)
